@@ -1,0 +1,598 @@
+<!DOCTYPE html><html class="light" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#81746e",
+                    "primary-container": "#4e3629",
+                    "surface-bright": "#fff8f6",
+                    "on-tertiary-container": "#a8a5a1",
+                    "surface": "#fff8f6",
+                    "on-error": "#ffffff",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#e6e2dd",
+                    "secondary-container": "#fed65b",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffe088",
+                    "tertiary-container": "#3c3b38",
+                    "tertiary": "#262523",
+                    "tertiary-fixed-dim": "#c9c6c1",
+                    "on-surface": "#251912",
+                    "surface-variant": "#f6ded2",
+                    "surface-container": "#ffeae0",
+                    "on-tertiary-fixed-variant": "#484743",
+                    "on-primary-fixed": "#2a170c",
+                    "outline-variant": "#d3c3bc",
+                    "primary": "#362115",
+                    "on-background": "#251912",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-fixed-dim": "#e9c349",
+                    "inverse-surface": "#3c2d26",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "inverse-on-surface": "#ffede5",
+                    "primary-fixed": "#ffdbca",
+                    "on-primary-container": "#c19f8e",
+                    "surface-tint": "#74584a",
+                    "surface-container-low": "#fff1eb",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "surface-container-high": "#fce3d8",
+                    "on-surface-variant": "#4f453f",
+                    "on-secondary-fixed": "#241a00",
+                    "surface-dim": "#edd5ca",
+                    "primary-fixed-dim": "#e3bfad",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#5a4134",
+                    "background": "#fff8f6",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#e3bfad",
+                    "surface-container-highest": "#f6ded2",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-padding-mobile": "20px",
+                    "card-gap": "32px",
+                    "unit": "8px",
+                    "container-padding-desktop": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["EB Garamond"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-xl": ["EB Garamond"],
+                    "data-neptu": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "data-neptu": ["20px", {"lineHeight": "24px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fff8f6; color: #251912; scroll-behavior: smooth; }
+        .batik-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/batik-seamless.png");
+            opacity: 0.03;
+        }
+        .diamond-bullet::before {
+            content: "◆";
+            color: #735c00;
+            margin-right: 12px;
+            font-size: 0.8rem;
+        }
+        .aksara-dot::after {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #735c00;
+            transform: rotate(45deg);
+            margin: 0 16px;
+        }
+        .divider-elegant {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d3c3bc, transparent);
+            margin: 48px 0;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(211, 195, 188, 0.3);
+        }
+    
+
+/* =========================
+   PREMIUM RESPONSIVE NAVBAR
+========================= */
+.site-nav{
+  height: 76px !important;
+  box-shadow: 0 12px 35px rgba(54,33,21,.06);
+}
+.site-nav-inner{ height: 76px !important; }
+.site-brand{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #362115;
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.brand-mark{
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg,#4e3629,#735c00);
+  color: #ffe088;
+  font-size: 22px;
+  box-shadow: 0 8px 20px rgba(54,33,21,.18);
+}
+.nav-link{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: #4f453f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color .25s ease, background .25s ease, transform .25s ease;
+}
+.nav-link::after{
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 5px;
+  height: 2px;
+  border-radius: 999px;
+  background: #735c00;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+.nav-link:hover,
+.nav-link.is-active{
+  color: #735c00;
+  background: #fff8f6;
+  transform: translateY(-1px);
+}
+.nav-link:hover::after,
+.nav-link.is-active::after{ transform: scaleX(1); }
+.nav-toggle{
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  color: #362115;
+  background: #fff8f6;
+  border: 1px solid rgba(211,195,188,.75);
+  box-shadow: 0 8px 20px rgba(54,33,21,.08);
+}
+.nav-toggle .close-icon{ display: none; }
+.nav-toggle.is-open .menu-icon{ display: none; }
+.nav-toggle.is-open .close-icon{ display: inline-block; }
+.mobile-menu{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 76px;
+  padding: 10px 20px 18px;
+  background: linear-gradient(180deg, rgba(255,248,246,.98), rgba(255,248,246,.88));
+  border-bottom: 1px solid rgba(211,195,188,.55);
+  transform: translateY(-16px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.mobile-menu.is-open{
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-menu-card{
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(211,195,188,.65);
+  box-shadow: 0 16px 35px rgba(54,33,21,.10);
+}
+.mobile-nav-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 16px;
+  color: #4f453f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+.mobile-nav-link::after{
+  content: "";
+  width: 34px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0;
+  transform: scaleX(.35);
+  transition: opacity .25s ease, transform .25s ease;
+}
+.mobile-nav-link:hover,
+.mobile-nav-link.is-active{
+  background: #ffeae0;
+  color: #735c00;
+  transform: translateX(2px);
+}
+.mobile-nav-link:hover::after,
+.mobile-nav-link.is-active::after{
+  opacity: 1;
+  transform: scaleX(1);
+}
+@media (max-width: 767px){
+  .site-nav{ height: 72px !important; }
+  .site-nav-inner{ height: 72px !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+  .mobile-menu{ top: 72px; }
+  .site-brand{ font-size: 30px !important; }
+  .brand-mark{ width: 34px; height: 34px; font-size: 19px; }
+  main{ padding-top: 110px !important; }
+  body > section:first-of-type{ padding-top: 116px !important; }
+}
+
+</style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- Navigation Shell -->
+<!-- TopNavBar -->
+<nav class="site-nav fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/40 transition-all duration-300">
+  <div class="site-nav-inner flex justify-between items-center w-full px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+    <a class="site-brand" href="index.html" aria-label="Weton Jawi Beranda">
+      <span class="brand-mark">ꦮ</span>
+      <span>Weton Jawi</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-2 rounded-full bg-white/45 border border-outline-variant/40 px-2 py-2 shadow-sm">
+      <a class="nav-link " href="index.html">Hitung Weton</a>
+<a class="nav-link " href="tanggal-jawa.html">Cari Tanggal Baik</a>
+<a class="nav-link is-active" href="tentang-budaya.html">Tentang Budaya</a>
+    </div>
+
+    <button id="navToggle" class="nav-toggle md:hidden" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="material-symbols-outlined menu-icon">menu</span>
+      <span class="material-symbols-outlined close-icon">close</span>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu md:hidden" aria-hidden="true">
+    <div class="mobile-menu-card">
+      <a class="mobile-nav-link " href="index.html">Hitung Weton</a>
+<a class="mobile-nav-link " href="tanggal-jawa.html">Cari Tanggal Baik</a>
+<a class="mobile-nav-link is-active" href="tentang-budaya.html">Tentang Budaya</a>
+    </div>
+  </div>
+</nav>
+<main class="relative pt-20">
+<!-- Background Pattern -->
+<div class="fixed inset-0 batik-overlay pointer-events-none"></div>
+<!-- Hero Section -->
+<section class="relative h-[716px] flex items-center justify-center overflow-hidden px-container-padding-mobile">
+<div class="absolute inset-0 z-0">
+<img alt="Filosofi Weton" class="w-full h-full object-cover opacity-20" data-alt="A serene and atmospheric close-up of traditional Javanese batik fabric with intricate Parang patterns. The lighting is soft and golden, casting gentle shadows that emphasize the textile's rich texture. The color palette is dominated by deep browns, cream, and subtle gold accents, reflecting a sense of ancient wisdom and luxury Palatial Modernism style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5oD7g5QBM5tXeLkXgtmLiSii3chkp7599tZ7GnZh0vJKIXqWS2LzkEmKjinJKw6Vj2LlhT4ddKhIC--LALOO_pJwQ5FFDJZtqf1oXRQDfsQuX4aq-kb20pssQK1d5PumJ3C8E9smEKu7JBKAUPGWXef-UmVd-40YjvDKL1vWZQNjdZqWemV25TDFYYZiXKe913wQETBkUw4R6_3Ys3JvCR4CKTjC1LOsS4xMkJ8u9Zi9AsUZUpj9xqmc5tjFIVCIuLta5BlGSXRQ">
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 to-surface"></div>
+</div>
+<div class="relative z-10 text-center max-w-3xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em] mb-4 block">Edukasi Budaya</span>
+<h1 class="font-headline-xl text-headline-xl md:text-[64px] text-primary mb-6 leading-tight">Filosofi &amp; Rahasia Alam Weton Jawi</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Menelusuri jejak leluhur melalui sistem penanggalan kosmologis Jawi yang menyelaraskan jiwa manusia dengan ritme alam semesta.
+                </p>
+</div>
+</section>
+<!-- Article Content -->
+<section class="max-w-5xl mx-auto px-container-padding-mobile md:px-container-padding-desktop py-16">
+<!-- Introduction Section -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24 items-center">
+<div class="md:col-span-7">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Asal-Usul &amp; Esensi</h2>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                        Weton bukan sekadar hari kelahiran. Kata 'Weton' berasal dari bahasa Jawa 'metu' yang berarti keluar atau lahir. Ini adalah gabungan dari tujuh hari dalam seminggu (Senen-Minggu) dengan lima hari pasaran Jawa (Legi, Pahing, Pon, Wage, Kliwon).
+                    </p>
+<p class="text-on-surface-variant leading-relaxed">
+                        Bagi masyarakat Jawa, Weton adalah 'peta navigasi' hidup. Ia dipercaya membawa energi kosmik tertentu yang membentuk karakter, nasib, hingga kecocokan spiritual seseorang dengan orang lain.
+                    </p>
+</div>
+<div class="md:col-span-5 aspect-square glass-card rounded-xl p-8 flex items-center justify-center border-secondary/20 shadow-sm relative">
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-secondary text-on-secondary rounded-full flex items-center justify-center font-headline-md">ꦮ</div>
+<img alt="Naskah Jawa" class="w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-700" data-alt="A macro photograph of an antique Javanese manuscript (Serat) written in elegant Aksara Jawa script on aged parchment. The lighting is focused and dramatic, highlighting the texture of the ink and the golden edges of the paper. The background is a blurred warm cream tone, evoking a sense of historical mystery and sacred knowledge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-2CNB4kKs6FvZsymsbge1alUGv61zg9ffUANPa0RCnJNy0KVh4sKc1mQIjDfwpYvUi-3GOlXFNaMfIBSOJPbC12AzyBMJ0GB5MbivJWN4m9fXEoSvfobfjU7HZ4rldNEiagDB56Qk79mciGKbX5oOEdtP1l3zYv3tEGqzww39dGJySw5vCDIPiq2KZSkfERL-3-eWFvWacw9yGWSkGM0PHHkSMCga0MnJJn0T7yHMDu4EyuATFI9CLSioIJP0IMB5A6y7HdFEzD4">
+</div>
+</div>
+<div class="divider-elegant">
+<span class="aksara-dot"></span>
+</div>
+<!-- Neptu Explanation (Bento Style) -->
+<div class="py-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Memahami Makna Neptu</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="glass-card p-8 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-size: 32px;">calculate</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Nilai Numerik</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Setiap hari dan pasaran memiliki nilai angka (Neptu) yang jika dijumlahkan menjadi identitas spiritual seseorang.</p>
+</div>
+<div class="md:col-span-2 glass-card p-8 rounded-xl bg-primary text-on-primary-fixed border-none overflow-hidden relative group">
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md mb-4">Energi Kosmik</h3>
+<p class="opacity-80 leading-relaxed mb-4">Neptu bukan sekadar angka, melainkan representasi dari besarnya energi yang dibawa seseorang saat pertama kali menghirup udara di dunia ini.</p>
+<div class="flex gap-4">
+<span class="px-4 py-1 rounded-full border border-on-primary-fixed/30 text-xs uppercase tracking-widest">Saka</span>
+<span class="px-4 py-1 rounded-full border border-on-primary-fixed/30 text-xs uppercase tracking-widest">Wuku</span>
+</div>
+</div>
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[200px] opacity-10 group-hover:scale-110 transition-transform duration-1000">auto_awesome</span>
+</div>
+</div>
+</div>
+<!-- Primbon Compatibility Grid -->
+<div class="py-24" id="kecocokan">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">8 Kategori Kecocokan Primbon</h2>
+<p class="text-on-surface-variant">Dalam tradisi perjodohan, hasil penjumlahan Neptu kedua pasangan dibagi 8 untuk menentukan arah hubungan.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- PEGAT -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 1</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">link_off</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Pegat</h4>
+<p class="text-sm text-on-surface-variant mb-4">Kemungkinan sering menghadapi masalah di kemudian hari, dari ekonomi hingga perselisihan.</p>
+<span class="text-[10px] uppercase tracking-widest text-outline">Saran: Kesabaran ekstra</span>
+</div>
+<!-- RATU -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 2</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">workspace_premium</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Ratu</h4>
+<p class="text-sm text-on-surface-variant mb-4">Pasangan yang disegani dan dihormati oleh lingkungan sekitar. Hubungan yang harmonis.</p>
+<span class="text-[10px] uppercase tracking-widest text-outline">Saran: Jaga martabat</span>
+</div>
+<!-- JODOH -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300 ring-1 ring-secondary/20">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 3</span>
+<span class="material-symbols-outlined text-secondary">favorite</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Jodoh</h4>
+<p class="text-sm text-on-surface-variant mb-4">Saling melengkapi, menerima kekurangan, dan rejeki yang mengalir dengan lancar.</p>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-bold">Ideal &amp; Harmonis</span>
+</div>
+<!-- TOPO -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 4</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">self_improvement</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Topo</h4>
+<p class="text-sm text-on-surface-variant mb-4">Awal hubungan mungkin berat, namun akan berakhir bahagia seiring berjalannya waktu.</p>
+<span class="text-[10px] uppercase tracking-widest text-outline">Saran: Tekun berjuang</span>
+</div>
+<!-- TINARI -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 5</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">payments</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Tinari</h4>
+<p class="text-sm text-on-surface-variant mb-4">Keberuntungan finansial yang tinggi. Rejeki akan sering datang dari arah yang tak terduga.</p>
+<span class="text-[10px] uppercase tracking-widest text-outline">Saran: Tetap dermawan</span>
+</div>
+<!-- PADU -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 6</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">forum</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Padu</h4>
+<p class="text-sm text-on-surface-variant mb-4">Sering terjadi pertengkaran mulut namun tidak sampai berujung pada perpisahan.</p>
+<span class="text-[10px] uppercase tracking-widest text-outline">Saran: Kontrol emosi</span>
+</div>
+<!-- SUJANAN -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 7</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">visibility</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Sujanan</h4>
+<p class="text-sm text-on-surface-variant mb-4">Kemungkinan besar akan menghadapi isu perselingkuhan atau gangguan dari pihak ketiga.</p>
+<span class="text-[10px] uppercase tracking-widest text-outline">Saran: Bangun kepercayaan</span>
+</div>
+<!-- PESTHI -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300 ring-2 ring-secondary">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 8</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">all_inclusive</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Pesthi</h4>
+<p class="text-sm text-on-surface-variant mb-4">Hubungan yang tenang, damai, dan langgeng hingga tua tanpa ada hambatan yang berarti.</p>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-bold">Kebahagiaan Sejati</span>
+</div>
+</div>
+</div>
+<div class="divider-elegant">
+<span class="aksara-dot"></span>
+</div>
+<!-- Deep Dive Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 py-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Etika Memahami Primbon</h2>
+<ul class="space-y-6">
+<li class="flex items-start">
+<span class="diamond-bullet mt-1"></span>
+<p class="text-on-surface-variant">Primbon adalah referensi kebijaksanaan, bukan kebenaran mutlak. Gunakan sebagai alat mawas diri.</p>
+</li>
+<li class="flex items-start">
+<span class="diamond-bullet mt-1"></span>
+<p class="text-on-surface-variant">Karakter buruk yang diprediksi weton dapat diubah melalui laku prihatin (disiplin spiritual).</p>
+</li>
+<li class="flex items-start">
+<span class="diamond-bullet mt-1"></span>
+<p class="text-on-surface-variant">Menghormati weton berarti menghormati waktu lahir yang telah ditentukan oleh Sang Pencipta.</p>
+</li>
+</ul>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Budaya Jawa" class="w-full h-full object-cover" data-alt="A portrait of a person in traditional Javanese royal attire (Beskap) standing in a sun-drenched courtyard of a Keraton palace. The lighting creates strong highlights and long shadows, giving an editorial luxury feel. The overall mood is dignified, 'Alus', and timeless, with a cream and gold color palette that matches the modern Javanese UI style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJqpFd2rfW8FZdhy93-Yc2r0gstjio4dkL-qGHucfXoJpkES6vPZSeoP5uddF1X0ONtYdBzbjB6_ylit4UdA8o0EZrxy7vtPFY_H8kpBFIWmgZhHPTcst2KDv7J9nxNo_72DRvQD4AaEi-Kijc-8wSTeyr0E9qlZAFzgwRvceEr6zzvNiXThW9bsrnLDuOMKvFvSD2HHH3dOdKdpNuFK-XsSxtd5-_VHCADQfCSR5v8EiaAdCvZ89rowSUd7Rs0s1zUu8hMFzSNs">
+</div>
+<div class="absolute -bottom-8 -left-8 glass-card p-6 rounded-lg max-w-[240px]">
+<p class="font-headline-md text-headline-md text-primary italic">"Sapa kang mawas dhiri bakal ngerti jati dhiri."</p>
+<p class="text-[10px] uppercase tracking-wider text-secondary mt-2">— Pepatah Jawa</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container py-24 text-center">
+<div class="max-w-2xl mx-auto px-container-padding-mobile">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Cari Tahu Weton Anda Sekarang</h2>
+<p class="text-on-surface-variant mb-10">Temukan perhitungan akurat weton Anda beserta penjelasan mendalam tentang karakter dan potensi rejeki.</p>
+<a href="index.html" class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:bg-secondary transition-all shadow-lg">
+                    Hitung Weton Saya
+</a>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-surface-container-low border-t border-outline-variant/50">
+<div class="flex flex-col md:flex-row justify-between items-start gap-card-gap w-full px-container-padding-mobile md:px-container-padding-desktop py-16 max-w-7xl mx-auto">
+<div class="max-w-xs">
+<span class="font-headline-md text-headline-md text-primary mb-4 block">Weton Jawi</span>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">Pelestarian budaya melalui teknologi, membimbing langkah dengan kearifan lokal Jawi.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-2 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest">Budaya</span>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4" href="#">Filosofi Weton</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="tanggal-jawa.html">Kalender Jawa</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest">Informasi</span>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Hubungi Kami</a>
+
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-8 px-container-padding-mobile text-center">
+<p class="font-label-md text-label-md text-on-surface-variant opacity-60">© 2024 Tradisi Jawi. Rahayu Sagung Dumadi.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll animation for the nav
+        window.onscroll = function() {
+            const nav = document.querySelector('nav');
+            if (window.pageYOffset > 50) {
+                nav.classList.add('h-16', 'shadow-sm');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16', 'shadow-sm');
+            }
+        };
+
+        // Reveal animations on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+
+<script>
+(function(){
+  const btn = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    const open = menu.classList.toggle('is-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+  });
+  menu.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', function(){
+      menu.classList.remove('is-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded','false');
+      menu.setAttribute('aria-hidden','true');
+    });
+  });
+})();
+</script>
+
+</body></html>

@@ -1,0 +1,818 @@
+<!DOCTYPE html><html class="light" lang="id" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Weton Jawi - Cari Tanggal Baik Pernikahan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#81746e",
+                    "primary-container": "#4e3629",
+                    "surface-bright": "#fff8f6",
+                    "on-tertiary-container": "#a8a5a1",
+                    "surface": "#fff8f6",
+                    "on-error": "#ffffff",
+                    "secondary": "#735c00",
+                    "tertiary-fixed": "#e6e2dd",
+                    "secondary-container": "#fed65b",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffe088",
+                    "tertiary-container": "#3c3b38",
+                    "tertiary": "#262523",
+                    "tertiary-fixed-dim": "#c9c6c1",
+                    "on-surface": "#251912",
+                    "surface-variant": "#f6ded2",
+                    "surface-container": "#ffeae0",
+                    "on-tertiary-fixed-variant": "#484743",
+                    "on-primary-fixed": "#2a170c",
+                    "outline-variant": "#d3c3bc",
+                    "primary": "#362115",
+                    "on-background": "#251912",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-fixed-dim": "#e9c349",
+                    "inverse-surface": "#3c2d26",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "inverse-on-surface": "#ffede5",
+                    "primary-fixed": "#ffdbca",
+                    "on-primary-container": "#c19f8e",
+                    "surface-tint": "#74584a",
+                    "surface-container-low": "#fff1eb",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "surface-container-high": "#fce3d8",
+                    "on-surface-variant": "#4f453f",
+                    "on-secondary-fixed": "#241a00",
+                    "surface-dim": "#edd5ca",
+                    "primary-fixed-dim": "#e3bfad",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#5a4134",
+                    "background": "#fff8f6",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#e3bfad",
+                    "surface-container-highest": "#f6ded2",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-padding-mobile": "20px",
+                    "card-gap": "32px",
+                    "unit": "8px",
+                    "container-padding-desktop": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["EB Garamond"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-xl": ["EB Garamond"],
+                    "data-neptu": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "data-neptu": ["20px", {"lineHeight": "24px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+  /* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 1024px){
+
+  aside.sticky{
+    position: static !important;
+    top: auto !important;
+  }
+
+  .calendar-grid{
+    overflow-x: auto;
+  }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px){
+
+  nav{
+    height: auto !important;
+    padding: 14px 0;
+  }
+
+  nav .max-w-7xl{
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav .font-headline-xl{
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+
+  main{
+    padding-top: 40px !important;
+  }
+
+  header{
+    text-align: center !important;
+  }
+
+  header h1{
+    font-size: 36px !important;
+    line-height: 42px !important;
+  }
+
+  .calendar-grid{
+    grid-template-columns: repeat(7, minmax(90px,1fr));
+    min-width: 630px;
+  }
+
+  #calendarBody > div{
+    min-height: 120px !important;
+  }
+
+  aside.w-full.lg\\:w-72{
+    width: 100% !important;
+  }
+
+  aside.w-full.lg\\:w-96{
+    width: 100% !important;
+  }
+
+}
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 640px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .font-headline-xl{
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+
+  .font-headline-lg{
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  .font-headline-md{
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  .calendar-grid{
+    min-width: 700px;
+  }
+
+  #calendarBody > div{
+    min-height: 105px !important;
+    padding: 10px !important;
+  }
+
+  #calendarBody span{
+    font-size: 11px !important;
+  }
+
+  #detailTanggal{
+    padding: 24px !important;
+  }
+
+  footer .max-w-7xl{
+    text-align: center;
+  }
+
+}
+        .batik-pattern {
+            background-color: #fff8f6;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            position: relative;
+        }
+        .batik-pattern::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle at 2px 2px, rgba(54, 33, 21, 0.03) 1px, transparent 0);
+            background-size: 24px 24px;
+            pointer-events: none;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+        .ornament-border {
+            border-image: linear-gradient(to right, transparent, #D4AF37, transparent) 1;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    
+
+/* =========================
+   PREMIUM RESPONSIVE NAVBAR
+========================= */
+.site-nav{
+  height: 76px !important;
+  box-shadow: 0 12px 35px rgba(54,33,21,.06);
+}
+.site-nav-inner{ height: 76px !important; }
+.site-brand{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #362115;
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.brand-mark{
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg,#4e3629,#735c00);
+  color: #ffe088;
+  font-size: 22px;
+  box-shadow: 0 8px 20px rgba(54,33,21,.18);
+}
+.nav-link{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: #4f453f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color .25s ease, background .25s ease, transform .25s ease;
+}
+.nav-link::after{
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 5px;
+  height: 2px;
+  border-radius: 999px;
+  background: #735c00;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+.nav-link:hover,
+.nav-link.is-active{
+  color: #735c00;
+  background: #fff8f6;
+  transform: translateY(-1px);
+}
+.nav-link:hover::after,
+.nav-link.is-active::after{ transform: scaleX(1); }
+.nav-toggle{
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  color: #362115;
+  background: #fff8f6;
+  border: 1px solid rgba(211,195,188,.75);
+  box-shadow: 0 8px 20px rgba(54,33,21,.08);
+}
+.nav-toggle .close-icon{ display: none; }
+.nav-toggle.is-open .menu-icon{ display: none; }
+.nav-toggle.is-open .close-icon{ display: inline-block; }
+.mobile-menu{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 76px;
+  padding: 10px 20px 18px;
+  background: linear-gradient(180deg, rgba(255,248,246,.98), rgba(255,248,246,.88));
+  border-bottom: 1px solid rgba(211,195,188,.55);
+  transform: translateY(-16px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.mobile-menu.is-open{
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-menu-card{
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(211,195,188,.65);
+  box-shadow: 0 16px 35px rgba(54,33,21,.10);
+}
+.mobile-nav-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 16px;
+  color: #4f453f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+.mobile-nav-link::after{
+  content: "";
+  width: 34px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0;
+  transform: scaleX(.35);
+  transition: opacity .25s ease, transform .25s ease;
+}
+.mobile-nav-link:hover,
+.mobile-nav-link.is-active{
+  background: #ffeae0;
+  color: #735c00;
+  transform: translateX(2px);
+}
+.mobile-nav-link:hover::after,
+.mobile-nav-link.is-active::after{
+  opacity: 1;
+  transform: scaleX(1);
+}
+@media (max-width: 767px){
+  .site-nav{ height: 72px !important; }
+  .site-nav-inner{ height: 72px !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+  .mobile-menu{ top: 72px; }
+  .site-brand{ font-size: 30px !important; }
+  .brand-mark{ width: 34px; height: 34px; font-size: 19px; }
+  main{ padding-top: 110px !important; }
+  body > section:first-of-type{ padding-top: 116px !important; }
+}
+
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md batik-pattern min-h-screen">
+<!-- TopNavBar -->
+<nav class="site-nav fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/40 transition-all duration-300">
+  <div class="site-nav-inner flex justify-between items-center w-full px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+    <a class="site-brand" href="index.html" aria-label="Weton Jawi Beranda">
+      <span class="brand-mark">ꦮ</span>
+      <span>Weton Jawi</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-2 rounded-full bg-white/45 border border-outline-variant/40 px-2 py-2 shadow-sm">
+      <a class="nav-link " href="index.html">Hitung Weton</a>
+<a class="nav-link is-active" href="tanggal-jawa.html">Cari Tanggal Baik</a>
+<a class="nav-link " href="tentang-budaya.html">Tentang Budaya</a>
+    </div>
+
+    <button id="navToggle" class="nav-toggle md:hidden" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="material-symbols-outlined menu-icon">menu</span>
+      <span class="material-symbols-outlined close-icon">close</span>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu md:hidden" aria-hidden="true">
+    <div class="mobile-menu-card">
+      <a class="mobile-nav-link " href="index.html">Hitung Weton</a>
+<a class="mobile-nav-link is-active" href="tanggal-jawa.html">Cari Tanggal Baik</a>
+<a class="mobile-nav-link " href="tentang-budaya.html">Tentang Budaya</a>
+    </div>
+  </div>
+</nav>
+<main class="max-w-7xl mx-auto px-4 md:px-container-padding-desktop pt-[170px] md:pt-36 pb-8 md:pb-12 overflow-hidden">
+  <header class="mb-12 text-center md:text-left">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4">Pencarian Tanggal Baik Pernikahan</h1>
+<p class="text-on-surface-variant max-w-2xl font-body-lg text-body-lg">Menemukan keselarasan semesta untuk hari bahagia Anda melalui perhitungan Primbon Betaljemur Adammakna yang sakral.</p>
+</header>
+<div class="flex flex-col xl:flex-row gap-card-gap items-start">
+<!-- Sidebar Filter -->
+<aside class="w-full lg:w-72 flex-shrink-0 space-y-8 sticky top-32">
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/50 shadow-sm">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Filter Utama</h3>
+<div class="space-y-6">
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-3">Pilih Bulan</label>
+<select id="bulanInput" class="w-full bg-transparent border-b border-outline-variant focus:border-secondary outline-none py-2 text-primary font-body-md appearance-none cursor-pointer">
+<option value="0">Januari</option>
+<option value="1">Februari</option>
+<option value="2">Maret</option>
+<option value="3">April</option>
+<option value="4">Mei</option>
+<option value="5">Juni</option>
+<option value="6">Juli</option>
+<option value="7">Agustus</option>
+<option value="8">September</option>
+<option value="9">Oktober</option>
+<option value="10">November</option>
+<option value="11">Desember</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-3">Tahun</label>
+<input id="tahunInput" type="number" value="2028" class="w-full bg-transparent border-b border-outline-variant focus:border-secondary outline-none py-2 text-primary font-body-md">
+</div>
+<button id="btnTampilkan" class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md uppercase tracking-widest hover:bg-secondary transition">
+Tampilkan Kalender
+</button>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-4">Kriteria Primbon</label>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input id="filterSri" checked class="rounded border-outline text-secondary focus:ring-secondary" type="checkbox">
+<span class="text-body-md group-hover:text-primary transition-colors">Tampilkan Sri (Rezeki)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input id="filterGedhong" checked class="rounded border-outline text-secondary focus:ring-secondary" type="checkbox">
+<span class="text-body-md group-hover:text-primary transition-colors">Tampilkan Gedhong (Harta)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input id="filterLungguh" checked class="rounded border-outline text-secondary focus:ring-secondary" type="checkbox">
+<span class="text-body-md group-hover:text-primary transition-colors">Tampilkan Lungguh (Kedudukan)</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl h-48 group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A macro close-up of traditional Javanese Batik fabric featuring the intricate Parang pattern in deep chocolate brown and warm gold tones. The lighting is soft and diffused, highlighting the tactile texture of the hand-painted textile. The overall mood is luxurious and deeply rooted in Javanese cultural heritage, maintaining a warm and sophisticated color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApsQ_PvoD8u9oVauGueVlbaphayY2S9qJ3XQ6hBUl14NUSGlvM7Dmsr1wYkM40p9VwpzOXPaUt7zj9EnA7d04XBM5DuPE6uXfzUmu1ShbklncEvvqS42GId_Tp8m_lG875rZieX1KdI3QisE1RBJSgd99dKS5DwjevT7GDGElzObjl7o6muU68UuVqg0RqVBukcAqs_La0CCVvGtan8Xl1tS9OxxK-D6XOn8nu6Zr9ZPpyD94N4zBrUi2ujSfJuP2RnTO4TSw1uC4">
+<div class="absolute inset-0 bg-primary/40 flex items-center justify-center p-6 text-center">
+<p class="text-white font-headline-md text-headline-md italic">"Alusing Budi, Luhuring Pakarti"</p>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-grow space-y-12">
+<!-- Legend -->
+<div class="flex flex-wrap gap-6 items-center bg-surface-container-low/50 p-4 rounded-lg border border-outline-variant/30">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Keterangan:</span>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-emerald-600"></div>
+<span class="text-body-md">Sangat Baik</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<span class="text-body-md">Baik</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<span class="text-body-md">Kurang Disarankan</span>
+</div>
+</div>
+<!-- Calendar Grid -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-[0_30px_60px_-15px_rgba(54,33,21,0.04)] border border-outline-variant/50 overflow-hidden">
+<!-- Days Header -->
+<div class="calendar-grid border-b border-outline-variant/30 bg-surface-container-low">
+<div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Minggu</div>
+<div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Senin</div>
+<div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Selasa</div>
+<div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Rabu</div>
+<div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Kamis</div>
+<div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Jumat</div>
+<div class="p-4 text-center font-label-md text-label-md text-primary uppercase">Sabtu</div>
+</div>
+<!-- Calendar Body -->
+<div id="calendarBody" class="calendar-grid bg-white"></div>
+</div>
+</div>
+</div>
+<!-- Detail Side Panel -->
+<aside class="w-full lg:w-96 flex-shrink-0">
+<div id="detailTanggal" class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 shadow-sm sticky top-32">
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Detail Tanggal</h3>
+<p class="text-on-surface-variant font-body-md">Klik salah satu tanggal pada kalender untuk melihat detail weton, neptu, hasil, dan artinya.</p>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant/50 mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center gap-card-gap w-full px-container-padding-mobile md:px-container-padding-desktop py-12 max-w-7xl mx-auto">
+<div class="space-y-4 text-center md:text-left">
+<div class="font-headline-md text-headline-md text-primary">Weton Jawi</div>
+<p class="text-on-surface-variant font-body-md text-body-md">© 2024 Tradisi Jawi. Rahayu Sagung Dumadi.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Filosofi Weton</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Kalender Jawa</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Hubungi Kami</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Kebijakan Privasi</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:border-secondary hover:text-secondary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:border-secondary hover:text-secondary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+const hariNeptu = {
+  Minggu: 5,
+  Senin: 4,
+  Selasa: 3,
+  Rabu: 7,
+  Kamis: 8,
+  Jumat: 6,
+  Sabtu: 9
+};
+
+const pasaranNeptu = {
+  Legi: 5,
+  Pahing: 9,
+  Pon: 7,
+  Wage: 4,
+  Kliwon: 8
+};
+
+const hariList = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+const pasaranList = ["Legi", "Pahing", "Pon", "Wage", "Kliwon"];
+
+const bulanNama = [
+  "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+  "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+];
+
+const hasilSisa5 = {
+  1: "Sri",
+  2: "Lungguh",
+  3: "Gedhong",
+  4: "Lara",
+  0: "Pati"
+};
+
+const artiTanggal = {
+  Sri: "Melambangkan rezeki, kemakmuran, dan keberuntungan rumah tangga.",
+  Lungguh: "Melambangkan kedudukan baik, kehormatan, dan kehidupan yang stabil.",
+  Gedhong: "Melambangkan kecukupan harta, kenyamanan, dan sandang pangan.",
+  Lara: "Melambangkan adanya ujian, sehingga perlu pertimbangan dan doa lebih.",
+  Pati: "Dalam tradisi Jawa, hasil ini kurang disarankan dan sebaiknya dipertimbangkan kembali."
+};
+
+function getWeton(dateValue) {
+  const date = new Date(dateValue + "T00:00:00");
+  const hari = hariList[date.getDay()];
+
+  // Acuan sistem web:
+  // 23 April 2008 = Rabu Legi
+  const anchor = new Date("2008-04-23T00:00:00");
+  const selisihHari = Math.floor((date - anchor) / (1000 * 60 * 60 * 24));
+  const indexPasaran = ((selisihHari % 5) + 5) % 5;
+  const pasaran = pasaranList[indexPasaran];
+
+  const neptuHari = hariNeptu[hari];
+  const neptuPasaran = pasaranNeptu[pasaran];
+
+  return {
+    hari,
+    pasaran,
+    weton: `${hari} ${pasaran}`,
+    neptuHari,
+    neptuPasaran,
+    total: neptuHari + neptuPasaran
+  };
+}
+
+function getHasil(total) {
+  const sisa = total % 5;
+  return {
+    sisa,
+    nama: hasilSisa5[sisa],
+    arti: artiTanggal[hasilSisa5[sisa]]
+  };
+}
+
+function warnaHasil(nama) {
+  if (nama === "Sri") return "bg-emerald-100 text-emerald-800";
+  if (nama === "Lungguh") return "bg-surface-variant text-on-surface-variant";
+  if (nama === "Gedhong") return "bg-emerald-100 text-emerald-800";
+  if (nama === "Lara") return "bg-error-container text-on-error-container";
+  return "bg-error-container text-on-error-container";
+}
+
+function iconHasil(nama) {
+  if (nama === "Sri" || nama === "Gedhong") return `<span class="material-symbols-outlined text-[14px]">stars</span>`;
+  return "";
+}
+
+function tanggalISO(tahun, bulan, tanggal) {
+  return `${tahun}-${String(bulan + 1).padStart(2, "0")}-${String(tanggal).padStart(2, "0")}`;
+}
+
+function renderDetail(data) {
+  const detail = document.getElementById("detailTanggal");
+
+  detail.innerHTML = `
+    <p class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-3">Tanggal Dipilih</p>
+
+    <h3 class="font-headline-lg text-headline-lg text-primary mb-2">
+      ${data.tanggal} ${bulanNama[data.bulan]} ${data.tahun}
+    </h3>
+
+    <div class="h-[1px] bg-outline-variant/50 my-6"></div>
+
+    <div class="space-y-4">
+      <div>
+        <p class="text-[11px] uppercase tracking-widest text-on-surface-variant font-bold">Weton</p>
+        <p class="font-headline-md text-headline-md text-primary">${data.weton.weton}</p>
+      </div>
+
+      <div>
+        <p class="text-[11px] uppercase tracking-widest text-on-surface-variant font-bold">Neptu</p>
+        <p class="text-body-lg text-primary">
+          ${data.weton.hari} ${data.weton.neptuHari} + ${data.weton.pasaran} ${data.weton.neptuPasaran}
+          = <b>${data.weton.total}</b>
+        </p>
+      </div>
+
+      <div class="p-5 rounded-xl ${warnaHasil(data.hasil.nama)}">
+        <p class="text-[11px] uppercase tracking-widest font-bold mb-1">Hasil Primbon</p>
+        <p class="font-headline-lg text-headline-lg">${data.hasil.nama}</p>
+        <p class="mt-2 text-sm">${data.hasil.arti}</p>
+      </div>
+    </div>
+  `;
+}
+
+function renderKalender() {
+  const bulan = parseInt(document.getElementById("bulanInput").value);
+  const tahun = parseInt(document.getElementById("tahunInput").value);
+  const calendarBody = document.getElementById("calendarBody");
+
+  const filterSri = document.getElementById("filterSri").checked;
+  const filterGedhong = document.getElementById("filterGedhong").checked;
+  const filterLungguh = document.getElementById("filterLungguh").checked;
+
+  const filterAktif = [];
+  if (filterSri) filterAktif.push("Sri");
+  if (filterGedhong) filterAktif.push("Gedhong");
+  if (filterLungguh) filterAktif.push("Lungguh");
+
+  calendarBody.innerHTML = "";
+
+  const hariPertama = new Date(tahun, bulan, 1).getDay();
+  const jumlahHari = new Date(tahun, bulan + 1, 0).getDate();
+
+  for (let i = 0; i < hariPertama; i++) {
+    calendarBody.innerHTML += `
+      <div class="min-h-[120px] border-r border-b border-outline-variant/20 bg-surface-container-low/20"></div>
+    `;
+  }
+
+  for (let tanggal = 1; tanggal <= jumlahHari; tanggal++) {
+    const iso = tanggalISO(tahun, bulan, tanggal);
+    const weton = getWeton(iso);
+    const hasil = getHasil(weton.total);
+
+    const cocokFilter = filterAktif.includes(hasil.nama);
+    const redup = filterAktif.length > 0 && !cocokFilter ? "opacity-35" : "";
+
+    calendarBody.innerHTML += `
+      <div
+        class="min-h-[140px] p-3 border-r border-b border-outline-variant/20 hover:bg-surface-container transition-colors cursor-pointer group relative ${redup}"
+        data-tanggal="${tanggal}"
+        data-bulan="${bulan}"
+        data-tahun="${tahun}"
+      >
+        <span class="font-headline-md text-headline-md text-on-surface-variant group-hover:text-primary">
+          ${tanggal}
+        </span>
+
+        <div class="mt-1 flex flex-col">
+          <span class="font-label-md text-[10px] text-secondary uppercase tracking-tighter">
+            ${weton.pasaran}
+          </span>
+
+          <div class="mt-2 inline-flex items-center gap-1.5 px-2 py-0.5 ${warnaHasil(hasil.nama)} rounded text-[11px] font-bold w-fit uppercase">
+            ${iconHasil(hasil.nama)}
+            ${hasil.nama}
+          </div>
+
+          <span class="mt-2 text-[10px] text-on-surface-variant">
+            Neptu ${weton.total}
+          </span>
+        </div>
+
+        <div class="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="material-symbols-outlined text-primary/30">arrow_outward</span>
+        </div>
+      </div>
+    `;
+  }
+
+  document.querySelectorAll("#calendarBody [data-tanggal]").forEach(cell => {
+    cell.addEventListener("click", function() {
+      document.querySelectorAll("#calendarBody [data-tanggal]").forEach(el => {
+        el.classList.remove("bg-secondary-container/10", "ring-1", "ring-inset", "ring-secondary/20");
+      });
+
+      this.classList.add("bg-secondary-container/10", "ring-1", "ring-inset", "ring-secondary/20");
+
+      const tanggal = parseInt(this.dataset.tanggal);
+      const bulan = parseInt(this.dataset.bulan);
+      const tahun = parseInt(this.dataset.tahun);
+      const iso = tanggalISO(tahun, bulan, tanggal);
+      const weton = getWeton(iso);
+      const hasil = getHasil(weton.total);
+
+      renderDetail({
+        tanggal,
+        bulan,
+        tahun,
+        weton,
+        hasil
+      });
+    });
+  });
+}
+
+document.getElementById("btnTampilkan").addEventListener("click", renderKalender);
+document.getElementById("bulanInput").addEventListener("change", renderKalender);
+document.getElementById("tahunInput").addEventListener("input", renderKalender);
+document.getElementById("filterSri").addEventListener("change", renderKalender);
+document.getElementById("filterGedhong").addEventListener("change", renderKalender);
+document.getElementById("filterLungguh").addEventListener("change", renderKalender);
+
+const now = new Date();
+document.getElementById("bulanInput").value = now.getMonth();
+document.getElementById("tahunInput").value = now.getFullYear();
+
+renderKalender();
+</script>
+
+
+
+<script>
+(function(){
+  const btn = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    const open = menu.classList.toggle('is-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+  });
+  menu.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', function(){
+      menu.classList.remove('is-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded','false');
+      menu.setAttribute('aria-hidden','true');
+    });
+  });
+})();
+</script>
+
+</body></html>
