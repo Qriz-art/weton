@@ -398,34 +398,218 @@
   body > section:first-of-type{ padding-top: 116px !important; }
 }
 
+
+
+/* =========================
+   WETON JAWI FINAL NAVBAR
+   Aman dipakai di semua halaman
+========================= */
+.wjx-nav{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: rgba(255,248,246,.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(211,195,188,.58);
+  box-shadow: 0 12px 35px rgba(54,33,21,.055);
+}
+.wjx-inner{
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 78px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.wjx-brand{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  text-decoration: none;
+  color: #362115;
+}
+.wjx-title{
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: .95;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+.wjx-subtitle{
+  margin-top: 5px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .36em;
+  text-transform: uppercase;
+  color: rgba(115,92,0,.86);
+  white-space: nowrap;
+}
+.wjx-menu{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px;
+  border: 1px solid rgba(211,195,188,.48);
+  border-radius: 999px;
+  background: rgba(255,255,255,.42);
+  box-shadow: 0 8px 25px rgba(54,33,21,.045);
+}
+.wjx-link{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 15px;
+  border-radius: 999px;
+  color: #4f453f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color .25s ease, background .25s ease, transform .25s ease;
+}
+.wjx-link::after{
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 6px;
+  height: 2px;
+  border-radius: 999px;
+  background: #735c00;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+.wjx-link:hover,
+.wjx-link.is-active{
+  color: #735c00;
+  background: #fff1eb;
+  transform: translateY(-1px);
+}
+.wjx-link:hover::after,
+.wjx-link.is-active::after{
+  transform: scaleX(1);
+}
+.wjx-toggle{
+  display: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(211,195,188,.75);
+  background: rgba(255,255,255,.62);
+  color: #362115;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(54,33,21,.08);
+}
+.wjx-toggle .wjx-close{ display: none; }
+.wjx-toggle.is-open .wjx-open{ display: none; }
+.wjx-toggle.is-open .wjx-close{ display: inline-block; }
+.wjx-mobile{
+  display: none;
+  padding: 0 20px 18px;
+}
+.wjx-mobile.is-open{
+  display: block;
+}
+.wjx-mobile-card{
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 22px;
+  border: 1px solid rgba(211,195,188,.62);
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 16px 35px rgba(54,33,21,.10);
+}
+.wjx-mobile-link{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  padding: 0 16px;
+  border-radius: 16px;
+  color: #4f453f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+.wjx-mobile-link::after{
+  content: "";
+  width: 34px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0;
+  transform: scaleX(.35);
+  transition: opacity .25s ease, transform .25s ease;
+}
+.wjx-mobile-link:hover,
+.wjx-mobile-link.is-active{
+  background: #ffeae0;
+  color: #735c00;
+  transform: translateX(2px);
+}
+.wjx-mobile-link:hover::after,
+.wjx-mobile-link.is-active::after{
+  opacity: 1;
+  transform: scaleX(1);
+}
+@media (max-width: 900px){
+  .wjx-menu{ display: none; }
+  .wjx-toggle{ display: inline-flex; flex-shrink: 0; }
+  .wjx-inner{ min-height: 74px; padding: 0 18px; }
+  .wjx-title{ font-size: 30px; letter-spacing: .06em; }
+  .wjx-subtitle{ font-size: 8px; letter-spacing: .25em; }
+}
+@media (max-width: 380px){
+  .wjx-title{ font-size: 26px; }
+  .wjx-subtitle{ letter-spacing: .16em; }
+  .wjx-toggle{ width: 42px; height: 42px; }
+}
+
 </style>
 </head>
 <body class="bg-background text-on-surface font-body-md batik-pattern min-h-screen">
-<!-- TopNavBar -->
-<nav class="site-nav fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/40 transition-all duration-300">
-  <div class="site-nav-inner flex justify-between items-center w-full px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
-    <a class="site-brand" href="index.html" aria-label="Weton Jawi Beranda">
-      <span class="brand-mark">ꦮ</span>
-      <span>Weton Jawi</span>
+<!-- TopNavBar Final -->
+<nav class="wjx-nav">
+  <div class="wjx-inner">
+    <a class="wjx-brand" href="index.html" aria-label="Weton Jawi Beranda">
+      <span class="wjx-title">Weton Jawi</span>
+      <span class="wjx-subtitle">Serat Primbon Pawiwahan</span>
     </a>
-
-    <div class="hidden md:flex items-center gap-2 rounded-full bg-white/45 border border-outline-variant/40 px-2 py-2 shadow-sm">
-      <a class="nav-link " href="index.html">Hitung Weton</a>
-<a class="nav-link is-active" href="tanggal-jawa.html">Cari Tanggal Baik</a>
-<a class="nav-link " href="tentang-budaya.html">Tentang Budaya</a>
+    <div class="wjx-menu" aria-label="Menu utama">
+      <a class="wjx-link " href="index.html">Hitung Weton</a>
+<a class="wjx-link is-active" href="tanggal-jawa.html">Cari Tanggal Baik</a>
+<a class="wjx-link " href="weton-saya.html">Weton Saya</a>
+<a class="wjx-link " href="tentang-budaya.html">Tentang Budaya</a>
     </div>
-
-    <button id="navToggle" class="nav-toggle md:hidden" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
-      <span class="material-symbols-outlined menu-icon">menu</span>
-      <span class="material-symbols-outlined close-icon">close</span>
+    <button id="wjxToggle" class="wjx-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="wjxMobile">
+      <span class="material-symbols-outlined wjx-open">menu</span>
+      <span class="material-symbols-outlined wjx-close">close</span>
     </button>
   </div>
-
-  <div id="mobileMenu" class="mobile-menu md:hidden" aria-hidden="true">
-    <div class="mobile-menu-card">
-      <a class="mobile-nav-link " href="index.html">Hitung Weton</a>
-<a class="mobile-nav-link is-active" href="tanggal-jawa.html">Cari Tanggal Baik</a>
-<a class="mobile-nav-link " href="tentang-budaya.html">Tentang Budaya</a>
+  <div id="wjxMobile" class="wjx-mobile" aria-hidden="true">
+    <div class="wjx-mobile-card">
+      <a class="wjx-mobile-link " href="index.html">Hitung Weton</a>
+<a class="wjx-mobile-link is-active" href="tanggal-jawa.html">Cari Tanggal Baik</a>
+<a class="wjx-mobile-link " href="weton-saya.html">Weton Saya</a>
+<a class="wjx-mobile-link " href="tentang-budaya.html">Tentang Budaya</a>
     </div>
   </div>
 </nav>
@@ -793,10 +977,13 @@ renderKalender();
 
 
 
+
+
+
 <script>
 (function(){
-  const btn = document.getElementById('navToggle');
-  const menu = document.getElementById('mobileMenu');
+  const btn = document.getElementById('wjxToggle');
+  const menu = document.getElementById('wjxMobile');
   if(!btn || !menu) return;
   btn.addEventListener('click', function(){
     const open = menu.classList.toggle('is-open');
