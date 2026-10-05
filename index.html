@@ -1,659 +1,319 @@
 <!DOCTYPE html>
-
-<html class="light" lang="id"><head>
+<html class="light" lang="id">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<!-- SEO DASAR -->
-<title>Weton Jawi - Hitung Weton & Cari Tanggal Baik Pernikahan Jawa</title>
-
-<meta name="description" content="Hitung weton pasangan, cari tanggal baik pernikahan Jawa, dan pahami filosofi Primbon tradisional dalam balutan desain modern Weton Jawi.">
-
-<meta name="keywords" content="weton jawa, hitung weton, tanggal baik pernikahan jawa, primbon jawa, weton jodoh, kalender jawa, weton jawi, pasaran jawa, hari baik nikah, filosofi weton jawa
-arti weton jawa, budaya jawa, tradisi jawa, primbon leluhur jawa, makna neptu jawa, siklus pasaran jawa, hari pasaran jawa, warisan budaya jawa, adat pernikahan jawa, cek weton saya, weton lahir, weton berdasarkan tanggal lahir, arti weton lahir, neptu lahir jawa, karakter weton jawa, sifat weton jawa, ramalan weton jawa">
-
-<meta name="author" content="Weton Jawi">
-
-<meta name="robots" content="index, follow">
-
-<meta name="language" content="id">
-
-<meta name="theme-color" content="#362115">
-
-<!-- OPEN GRAPH -->
-<meta property="og:type" content="website">
-
-<meta property="og:title" content="Weton Jawi - Hitung Weton & Tanggal Baik Pernikahan">
-
-<meta property="og:description" content="Temukan weton pasangan, hitungan Primbon Jawa, dan rekomendasi tanggal akad terbaik dalam nuansa budaya Jawa modern.">
-
-<meta property="og:image" content="https://raw.githubusercontent.com/Qriz-art/gudang/main/assets/tanggal-min.png">
-
-<meta property="og:url" content="https://weton-jawa-self.vercel.app">
-
-<meta property="og:site_name" content="Weton Jawi">
-
-<meta property="og:locale" content="id_ID">
-
-<!-- FAVICON -->
-<link rel="icon" type="image/png" href="https://qriz-art.github.io/gudang/assets/sameki.png">
-
-<!-- CANONICAL -->
-<link rel="canonical" href="https://weton-jawa-self.vercel.app">
-
-<!-- MOBILE -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- GOOGLE FONTS PRECONNECT -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind -->
+<title>Weton Jawi - Hitung Weton, Cari Tanggal Baik Pernikahan & Weton Saya</title>
+<meta name="description" content="Hitung weton pasangan, cari tanggal baik pernikahan Jawa, ketahui weton pribadi, dan pahami filosofi Primbon tradisional dalam balutan desain modern Weton Jawi."/>
+<meta name="keywords" content="weton jawa, hitung weton, tanggal baik pernikahan jawa, primbon jawa, weton jodoh, kalender jawa, weton jawi, pasaran jawa, hari baik nikah, filosofi weton jawa, arti weton jawa, budaya jawa, tradisi jawa, primbon leluhur jawa, makna neptu jawa, siklus pasaran jawa, hari pasaran jawa, warisan budaya jawa, adat pernikahan jawa, cek weton saya, weton lahir, arti weton lahir, neptu lahir jawa, karakter weton jawa, sifat weton jawa"/>
+<meta name="author" content="Weton Jawi"/>
+<meta name="robots" content="index, follow"/>
+<meta name="language" content="id"/>
+<meta name="theme-color" content="#362115"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Weton Jawi - Hitung Weton & Tanggal Baik Pernikahan"/>
+<meta property="og:description" content="Temukan weton pasangan, hitungan Primbon Jawa, dan rekomendasi tanggal akad terbaik dalam nuansa budaya Jawa modern."/>
+<meta property="og:image" content="https://raw.githubusercontent.com/Qriz-art/gudang/main/assets/tanggal-min.png"/>
+<meta property="og:url" content="https://weton-jawa-self.vercel.app"/>
+<meta property="og:site_name" content="Weton Jawi"/>
+<meta property="og:locale" content="id_ID"/>
+<link rel="icon" type="image/png" href="https://qriz-art.github.io/gudang/assets/sameki.png"/>
+<link rel="canonical" href="https://weton-jawa-self.vercel.app"/>
+<!-- =========================================================
+     MONETAG
+     1) VERIFIKASI: pilih metode "Masukkan kode" di dashboard Monetag,
+        lalu tempel token pada baris meta monetag di bawah dan hapus tanda komentar.
+     2) IKLAN: buat zona iklan (Banner / In-Page Push / OnClick Popunder),
+        lalu tempel script zona pada setiap penanda "SLOT IKLAN" di dalam body.
+     3) Untuk Popunder / In-Page Push / Vignette, cukup tempel script utama
+        Monetag sekali di bawah ini.
+========================================================= -->
+<!-- MONETAG VERIFIKASI SITUS -->
+<meta name="monetag" content="926b72800274abb703f98d7599d9e1f734">
+<!-- MONETAG SCRIPT UTAMA (Popunder / In-Page Push / Vignette) — tempel di sini -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "outline": "#81746e",
-                    "primary-container": "#4e3629",
-                    "surface-bright": "#fff8f6",
-                    "on-tertiary-container": "#a8a5a1",
-                    "surface": "#fff8f6",
-                    "on-error": "#ffffff",
-                    "secondary": "#735c00",
-                    "tertiary-fixed": "#e6e2dd",
-                    "secondary-container": "#fed65b",
-                    "on-error-container": "#93000a",
-                    "secondary-fixed": "#ffe088",
-                    "tertiary-container": "#3c3b38",
-                    "tertiary": "#262523",
-                    "tertiary-fixed-dim": "#c9c6c1",
-                    "on-surface": "#251912",
-                    "surface-variant": "#f6ded2",
-                    "surface-container": "#ffeae0",
-                    "on-tertiary-fixed-variant": "#484743",
-                    "on-primary-fixed": "#2a170c",
-                    "outline-variant": "#d3c3bc",
-                    "primary": "#362115",
-                    "on-background": "#251912",
-                    "on-secondary-fixed-variant": "#574500",
-                    "secondary-fixed-dim": "#e9c349",
-                    "inverse-surface": "#3c2d26",
-                    "on-tertiary-fixed": "#1c1c19",
-                    "inverse-on-surface": "#ffede5",
-                    "primary-fixed": "#ffdbca",
-                    "on-primary-container": "#c19f8e",
-                    "surface-tint": "#74584a",
-                    "surface-container-low": "#fff1eb",
-                    "on-secondary": "#ffffff",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-container": "#745c00",
-                    "surface-container-high": "#fce3d8",
-                    "on-surface-variant": "#4f453f",
-                    "on-secondary-fixed": "#241a00",
-                    "surface-dim": "#edd5ca",
-                    "primary-fixed-dim": "#e3bfad",
-                    "on-primary": "#ffffff",
-                    "on-primary-fixed-variant": "#5a4134",
-                    "background": "#fff8f6",
-                    "error": "#ba1a1a",
-                    "inverse-primary": "#e3bfad",
-                    "surface-container-highest": "#f6ded2",
-                    "surface-container-lowest": "#ffffff",
-                    "error-container": "#ffdad6"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "container-padding-mobile": "20px",
-                    "card-gap": "32px",
-                    "unit": "8px",
-                    "container-padding-desktop": "64px",
-                    "gutter": "24px"
-            },
-            "fontFamily": {
-                    "headline-lg": ["EB Garamond"],
-                    "body-md": ["Plus Jakarta Sans"],
-                    "headline-md": ["EB Garamond"],
-                    "headline-xl": ["EB Garamond"],
-                    "data-neptu": ["EB Garamond"],
-                    "headline-lg-mobile": ["EB Garamond"],
-                    "label-md": ["Plus Jakarta Sans"],
-                    "body-lg": ["Plus Jakarta Sans"]
-            },
-            "fontSize": {
-                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
-                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                    "data-neptu": ["20px", {"lineHeight": "24px", "fontWeight": "600"}],
-                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
-            }
-          },
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline": "#81746e", "primary-container": "#4e3629", "surface-bright": "#fff8f6",
+          "on-tertiary-container": "#a8a5a1", "surface": "#fff8f6", "on-error": "#ffffff",
+          "secondary": "#735c00", "tertiary-fixed": "#e6e2dd", "secondary-container": "#fed65b",
+          "on-error-container": "#93000a", "secondary-fixed": "#ffe088", "tertiary-container": "#3c3b38",
+          "tertiary": "#262523", "tertiary-fixed-dim": "#c9c6c1", "on-surface": "#251912",
+          "surface-variant": "#f6ded2", "surface-container": "#ffeae0", "on-tertiary-fixed-variant": "#484743",
+          "on-primary-fixed": "#2a170c", "outline-variant": "#d3c3bc", "primary": "#362115",
+          "on-background": "#251912", "on-secondary-fixed-variant": "#574500", "secondary-fixed-dim": "#e9c349",
+          "inverse-surface": "#3c2d26", "on-tertiary-fixed": "#1c1c19", "inverse-on-surface": "#ffede5",
+          "primary-fixed": "#ffdbca", "on-primary-container": "#c19f8e", "surface-tint": "#74584a",
+          "surface-container-low": "#fff1eb", "on-secondary": "#ffffff", "on-tertiary": "#ffffff",
+          "on-secondary-container": "#745c00", "surface-container-high": "#fce3d8", "on-surface-variant": "#4f453f",
+          "on-secondary-fixed": "#241a00", "surface-dim": "#edd5ca", "primary-fixed-dim": "#e3bfad",
+          "on-primary": "#ffffff", "on-primary-fixed-variant": "#5a4134", "background": "#fff8f6",
+          "error": "#ba1a1a", "inverse-primary": "#e3bfad", "surface-container-highest": "#f6ded2",
+          "surface-container-lowest": "#ffffff", "error-container": "#ffdad6"
         },
+        "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        "spacing": { "container-padding-mobile": "20px", "card-gap": "32px", "unit": "8px", "container-padding-desktop": "64px", "gutter": "24px" },
+        "fontFamily": {
+          "headline-lg": ["EB Garamond"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["EB Garamond"],
+          "headline-xl": ["EB Garamond"], "data-neptu": ["EB Garamond"], "headline-lg-mobile": ["EB Garamond"],
+          "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+          "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+          "data-neptu": ["20px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+          "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+        }
       }
-    </script>
+    }
+  }
+</script>
 <style>
-        body {
-            background-color: #F9F5F0;
-            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .ornament-dots::after {
-            content: "•";
-            color: #D4AF37;
-            margin: 0 12px;
-        }
-        .input-underline {
-            border-bottom: 1.5px solid #d3c3bc;
-            transition: border-color 0.3s ease;
-        }
-        .input-underline:focus {
-            border-bottom: 2px solid #735c00;
-            outline: none;
-        }
-        .batik-overlay {
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-            opacity: 0.05;
-        }
-    
-        .handmade-paper {
-            background-color: #fcf9f2;
-            background-image:
-                url("https://www.transparenttextures.com/patterns/natural-paper.png"),
-                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(244, 235, 215, 0.2) 100%);
-            box-shadow:
-                0 10px 30px -5px rgba(0, 0, 0, 0.1),
-                0 25px 50px -12px rgba(0, 0, 0, 0.15),
-                inset 0 0 60px rgba(139, 69, 19, 0.03);
-        }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #F9F5F0;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+    overflow-x: hidden;
+  }
+  section[id] { scroll-margin-top: 96px; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .font-jawi { font-family: 'EB Garamond', serif; }
+  .ornament-dots::after { content: "\2022"; color: #D4AF37; margin: 0 12px; }
+  .input-underline { border-bottom: 1.5px solid #d3c3bc; transition: border-color 0.3s ease; }
+  .input-underline:focus { border-bottom: 2px solid #735c00; outline: none; }
+  .input-line {
+    width: 100%; background: transparent; border: none;
+    border-bottom: 1.5px solid #d3c3bc; padding: 12px 0; outline: none; color: #362115;
+  }
+  .input-line:focus { border-bottom-color: #735c00; }
 
-        .prada-gold-border {
-            border: 1px solid transparent;
-            background: linear-gradient(#fcf9f2, #fcf9f2) padding-box,
-                        linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C) border-box;
-            position: relative;
-        }
+  .batik-overlay {
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    opacity: 0.05;
+  }
+  .batik-overlay-article {
+    background-image: url("https://www.transparenttextures.com/patterns/batik-seamless.png");
+    opacity: 0.03;
+  }
+  .batik-pattern {
+    background-color: #fff8f6;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+    position: relative;
+  }
+  .diamond-bullet::before { content: "\25C6"; color: #735c00; margin-right: 12px; font-size: 0.8rem; }
+  .divider-elegant {
+    display: flex; align-items: center; justify-content: center; width: 100%; height: 1px;
+    background: linear-gradient(90deg, transparent, #d3c3bc, transparent); margin: 48px 0;
+  }
+  .aksara-dot { display: inline-block; width: 8px; height: 8px; background: #735c00; transform: rotate(45deg); }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(211, 195, 188, 0.3);
+  }
 
-        .prada-gold-text {
-            background: linear-gradient(135deg, #8A6421 0%, #D4AF37 50%, #8A6421 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 600;
-        }
+  .life-bar { height: 12px; border-radius: 999px; background: #f1ddd3; overflow: hidden; }
+  .life-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg,#735c00,#d4af37); width: 0%; transition: width .9s ease; }
 
-        .prada-gold-accent {
-            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728);
-        }
+  .handmade-paper {
+    background-color: #fcf9f2;
+    background-image:
+      url("https://www.transparenttextures.com/patterns/natural-paper.png"),
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(244, 235, 215, 0.2) 100%);
+    box-shadow:
+      0 10px 30px -5px rgba(0, 0, 0, 0.1),
+      0 25px 50px -12px rgba(0, 0, 0, 0.15),
+      inset 0 0 60px rgba(139, 69, 19, 0.03);
+  }
+  .prada-gold-border {
+    border: 1px solid transparent;
+    background: linear-gradient(#fcf9f2, #fcf9f2) padding-box,
+          linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C) border-box;
+    position: relative;
+  }
+  .prada-gold-text {
+    background: linear-gradient(135deg, #8A6421 0%, #D4AF37 50%, #8A6421 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    font-weight: 600; word-break: break-word; line-height: 1;
+  }
+  .prada-gold-accent { background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728); }
+  .ornament-corner-premium { position: absolute; width: 40px; height: 40px; pointer-events: none; }
+  .p-tl { top: 20px; left: 20px; border-top: 2px solid #D4AF37; border-left: 2px solid #D4AF37; }
+  .p-tr { top: 20px; right: 20px; border-top: 2px solid #D4AF37; border-right: 2px solid #D4AF37; }
+  .p-bl { bottom: 20px; left: 20px; border-bottom: 2px solid #D4AF37; border-left: 2px solid #D4AF37; }
+  .p-br { bottom: 20px; right: 20px; border-bottom: 2px solid #D4AF37; border-right: 2px solid #D4AF37; }
+  .couple-name { font-family: 'EB Garamond', serif; letter-spacing: -0.01em; }
+  .data-label { font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 0.15em; text-transform: uppercase; }
+  #cert-container { width: 540px; aspect-ratio: 9 / 16; max-width: 100%; background: #fcf9f2; overflow: hidden; margin: auto; }
 
-        .ornament-corner-premium {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            pointer-events: none;
-        }
+  .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); }
+  .calendar-scroll { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .calendar-scroll::-webkit-scrollbar { height: 8px; }
+  .calendar-scroll::-webkit-scrollbar-thumb { background: rgba(115,92,0,.35); border-radius: 999px; }
+  .calendar-scroll::-webkit-scrollbar-track { background: rgba(211,195,188,.25); }
+  .calendar-hint{ display:none; margin:0; padding:10px 14px; border-top:1px solid rgba(211,195,188,.4); background:#fff; color:#735c00; font-family:'Plus Jakarta Sans',sans-serif; font-size:11px; font-weight:700; text-align:center; }
+  .ornament-border { border-image: linear-gradient(to right, transparent, #D4AF37, transparent) 1; }
+  .wjx-nav{
+    position: sticky; top: 0; z-index: 9999;
+    background: rgba(255,248,246,.94);
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(211,195,188,.58);
+    box-shadow: 0 12px 35px rgba(54,33,21,.055);
+  }
+  .wjx-inner{
+    max-width: 1280px; margin: 0 auto; min-height: 78px; padding: 0 20px;
+    display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  }
+  .wjx-brand{ display: inline-flex; flex-direction: column; justify-content: center; min-width: 0; text-decoration: none; color: #362115; }
+  .wjx-title{
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(30px, 3.4vw, 44px); line-height: .95; font-style: italic;
+    font-weight: 700; letter-spacing: .08em; white-space: nowrap;
+  }
+  .wjx-subtitle{
+    margin-top: 5px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 9px;
+    font-weight: 800; letter-spacing: .36em; text-transform: uppercase;
+    color: rgba(115,92,0,.86); white-space: nowrap;
+  }
+  .wjx-menu{
+    display: flex; align-items: center; gap: 8px; padding: 7px;
+    border: 1px solid rgba(211,195,188,.48); border-radius: 999px;
+    background: rgba(255,255,255,.42); box-shadow: 0 8px 25px rgba(54,33,21,.045);
+  }
+  .wjx-link{
+    position: relative; display: inline-flex; align-items: center; justify-content: center;
+    min-height: 38px; padding: 0 15px; border-radius: 999px; color: #4f453f;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 800;
+    letter-spacing: .055em; text-transform: uppercase; text-decoration: none;
+    transition: color .25s ease, background .25s ease, transform .25s ease;
+  }
+  .wjx-link::after{
+    content: ""; position: absolute; left: 18px; right: 18px; bottom: 6px; height: 2px;
+    border-radius: 999px; background: #735c00; transform: scaleX(0);
+    transform-origin: center; transition: transform .25s ease;
+  }
+  .wjx-link:hover, .wjx-link.is-active{ color: #735c00; background: #fff1eb; transform: translateY(-1px); }
+  .wjx-link:hover::after, .wjx-link.is-active::after{ transform: scaleX(1); }
+  .wjx-toggle{
+    display: none; width: 46px; height: 46px; border-radius: 999px;
+    border: 1px solid rgba(211,195,188,.75); background: rgba(255,255,255,.62);
+    color: #362115; align-items: center; justify-content: center;
+    box-shadow: 0 8px 20px rgba(54,33,21,.08);
+  }
+  .wjx-toggle .wjx-close{ display: none; }
+  .wjx-toggle.is-open .wjx-open{ display: none; }
+  .wjx-toggle.is-open .wjx-close{ display: inline-block; }
+  .wjx-mobile{ display: none; padding: 0 20px 18px; }
+  .wjx-mobile.is-open{ display: block; }
+  .wjx-mobile-card{
+    max-width: 560px; margin: 0 auto; padding: 10px; border-radius: 22px;
+    border: 1px solid rgba(211,195,188,.62); background: rgba(255,255,255,.72);
+    box-shadow: 0 16px 35px rgba(54,33,21,.10);
+  }
+  .wjx-mobile-link{
+    position: relative; display: flex; align-items: center; justify-content: space-between;
+    min-height: 50px; padding: 0 16px; border-radius: 16px; color: #4f453f;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 800;
+    letter-spacing: .055em; text-transform: uppercase; text-decoration: none;
+    transition: background .25s ease, color .25s ease, transform .25s ease;
+  }
+  .wjx-mobile-link:hover, .wjx-mobile-link.is-active{ background: #ffeae0; color: #735c00; transform: translateX(2px); }
+  @media (max-width: 900px){
+    .wjx-menu{ display: none; }
+    .wjx-toggle{ display: inline-flex; flex-shrink: 0; }
+    .wjx-inner{ min-height: 74px; padding: 0 18px; }
+    .wjx-title{ font-size: 30px; letter-spacing: .06em; }
+    .wjx-subtitle{ font-size: 8px; letter-spacing: .25em; }
+  }
+  @media (max-width: 380px){
+    .wjx-title{ font-size: 26px; }
+    .wjx-subtitle{ letter-spacing: .16em; }
+    .wjx-toggle{ width: 42px; height: 42px; }
+  }
+  .ad-slot{ width: 100%; max-width: 1140px; margin: 32px auto; padding: 0 20px; }
+  .ad-slot-wide{ max-width: 1280px; }
+  .ad-slot-box{
+    min-height: 100px; display: flex; align-items: center; justify-content: center;
+    padding: 16px; border: 1px dashed rgba(211,195,188,.8); border-radius: 16px;
+    background: rgba(255,255,255,.5); color: #95867e;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: .28em; text-transform: uppercase; text-align: center;
+  }
+  .ad-slot-box > *{ margin: 0 auto; }
 
-        .p-tl { top: 20px; left: 20px; border-top: 2px solid #D4AF37; border-left: 2px solid #D4AF37; }
-        .p-tr { top: 20px; right: 20px; border-top: 2px solid #D4AF37; border-right: 2px solid #D4AF37; }
-        .p-bl { bottom: 20px; left: 20px; border-bottom: 2px solid #D4AF37; border-left: 2px solid #D4AF37; }
-        .p-br { bottom: 20px; right: 20px; border-bottom: 2px solid #D4AF37; border-right: 2px solid #D4AF37; }
+  @media (max-width: 1024px){
+    aside.sticky{ position: static !important; top: auto !important; }
+    .calendar-grid{ overflow-x: auto; }
+  }
+  @media (max-width: 768px){
+    header h1{ font-size: 36px !important; line-height: 42px !important; }
+    .calendar-hint{ display: block; }
+    .calendar-grid{ grid-template-columns: repeat(7, minmax(90px,1fr)); min-width: 630px; }
+    #calendarBody > div{ min-height: 120px !important; }
+  }
+  @media (max-width: 640px){
+    .font-headline-xl{ font-size: 28px !important; line-height: 34px !important; }
+    .font-headline-lg{ font-size: 24px !important; line-height: 30px !important; }
+    .font-headline-md{ font-size: 18px !important; line-height: 24px !important; }
+    .calendar-grid{ min-width: 700px; }
+    #calendarBody > div{ min-height: 105px !important; padding: 10px !important; }
+    #calendarBody span{ font-size: 11px !important; }
+    #detailTanggal{ padding: 24px !important; }
+    .ad-slot{ margin: 24px auto; }
+    .ad-slot-box{ min-height: 80px; }
+  }
 
-        .couple-name {
-            font-family: 'EB Garamond', serif;
-            letter-spacing: -0.01em;
-        }
-
-        .data-label {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-        }
-
-        @media print {
-            @page {
-                size: A4 portrait;
-                margin: 0;
-            }
-
-            html,
-            body {
-                width: 100%;
-                min-height: 100%;
-                margin: 0 !important;
-                padding: 0 !important;
-                background: #ffffff !important;
-                overflow: visible !important;
-            }
-
-            body * {
-                visibility: hidden !important;
-            }
-
-            #cert-container,
-            #cert-container * {
-                visibility: visible !important;
-            }
-
-            #undanganPreview {
-                display: block !important;
-                visibility: visible !important;
-                position: static !important;
-                margin: 0 !important;
-                padding: 0 !important;
-                width: 100% !important;
-            }
-
-            #cert-container {
-                position: absolute !important;
-                inset: 0 auto auto 0 !important;
-                width: 210mm !important;
-                min-height: 297mm !important;
-                max-width: none !important;
-                margin: 0 !important;
-                padding: 8mm !important;
-                box-shadow: none !important;
-                transform: none !important;
-                border-radius: 0 !important;
-                background: #fcf9f2 !important;
-                page-break-after: avoid !important;
-                page-break-inside: avoid !important;
-                overflow: hidden !important;
-            }
-
-            #cert-container .prada-gold-border {
-                min-height: calc(297mm - 16mm) !important;
-                box-sizing: border-box !important;
-            }
-
-            .no-print,
-            nav,
-            footer {
-                display: none !important;
-                visibility: hidden !important;
-            }
-        }
+  @media print {
+    @page { size: A4 portrait; margin: 0; }
+    html, body {
+      width: 100%; min-height: 100%; margin: 0 !important; padding: 0 !important;
+      background: #ffffff !important; overflow: visible !important;
+    }
+    body * { visibility: hidden !important; }
+    #cert-container, #cert-container * { visibility: visible !important; }
+    #undanganPreview {
+      display: block !important; visibility: visible !important;
+      position: static !important; margin: 0 !important; padding: 0 !important; width: 100% !important;
+    }
     #cert-container {
-  width: 540px;
-  aspect-ratio: 9 / 16;
-  max-width: 100%;
-  background: #fcf9f2;
-  overflow: hidden;
-  margin: auto;
-}
-.prada-gold-text {
-    word-break: break-word;
-    line-height: 1;
-}
-.site-nav{
-  height: 76px !important;
-  box-shadow: 0 12px 35px rgba(54,33,21,.06);
-}
-.site-nav-inner{ height: 76px !important; }
-.site-brand{
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #362115;
-  font-family: 'EB Garamond', serif;
-  font-size: clamp(28px, 3vw, 42px);
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -.02em;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.brand-mark{
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 999px;
-  background: linear-gradient(135deg,#4e3629,#735c00);
-  color: #ffe088;
-  font-size: 22px;
-  box-shadow: 0 8px 20px rgba(54,33,21,.18);
-}
-.nav-link{
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 38px;
-  padding: 0 16px;
-  border-radius: 999px;
-  color: #4f453f;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color .25s ease, background .25s ease, transform .25s ease;
-}
-.nav-link::after{
-  content: "";
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 5px;
-  height: 2px;
-  border-radius: 999px;
-  background: #735c00;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform .25s ease;
-}
-.nav-link:hover,
-.nav-link.is-active{
-  color: #735c00;
-  background: #fff8f6;
-  transform: translateY(-1px);
-}
-.nav-link:hover::after,
-.nav-link.is-active::after{ transform: scaleX(1); }
-.nav-toggle{
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: 999px;
-  color: #362115;
-  background: #fff8f6;
-  border: 1px solid rgba(211,195,188,.75);
-  box-shadow: 0 8px 20px rgba(54,33,21,.08);
-}
-.nav-toggle .close-icon{ display: none; }
-.nav-toggle.is-open .menu-icon{ display: none; }
-.nav-toggle.is-open .close-icon{ display: inline-block; }
-.mobile-menu{
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 76px;
-  padding: 10px 20px 18px;
-  background: linear-gradient(180deg, rgba(255,248,246,.98), rgba(255,248,246,.88));
-  border-bottom: 1px solid rgba(211,195,188,.55);
-  transform: translateY(-16px);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .25s ease, transform .25s ease;
-}
-.mobile-menu.is-open{
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-.mobile-menu-card{
-  max-width: 560px;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 22px;
-  background: rgba(255,255,255,.72);
-  border: 1px solid rgba(211,195,188,.65);
-  box-shadow: 0 16px 35px rgba(54,33,21,.10);
-}
-.mobile-nav-link{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 48px;
-  padding: 0 16px;
-  border-radius: 16px;
-  color: #4f453f;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background .25s ease, color .25s ease, transform .25s ease;
-}
-.mobile-nav-link::after{
-  content: "";
-  width: 34px;
-  height: 2px;
-  border-radius: 999px;
-  background: currentColor;
-  opacity: 0;
-  transform: scaleX(.35);
-  transition: opacity .25s ease, transform .25s ease;
-}
-.mobile-nav-link:hover,
-.mobile-nav-link.is-active{
-  background: #ffeae0;
-  color: #735c00;
-  transform: translateX(2px);
-}
-.mobile-nav-link:hover::after,
-.mobile-nav-link.is-active::after{
-  opacity: 1;
-  transform: scaleX(1);
-}
-@media (max-width: 767px){
-  .site-nav{ height: 72px !important; }
-  .site-nav-inner{ height: 72px !important; padding-top: 0 !important; padding-bottom: 0 !important; }
-  .mobile-menu{ top: 72px; }
-  .site-brand{ font-size: 30px !important; }
-  .brand-mark{ width: 34px; height: 34px; font-size: 19px; }
-  main{ padding-top: 110px !important; }
-  body > section:first-of-type{ padding-top: 116px !important; }
-}
-    
-
-/* =========================
-   WETON JAWI FINAL NAVBAR
-   Aman dipakai di semua halaman
-========================= */
-.wjx-nav{
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background: rgba(255,248,246,.94);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(211,195,188,.58);
-  box-shadow: 0 12px 35px rgba(54,33,21,.055);
-}
-.wjx-inner{
-  max-width: 1280px;
-  margin: 0 auto;
-  min-height: 78px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-}
-.wjx-brand{
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 0;
-  text-decoration: none;
-  color: #362115;
-}
-.wjx-title{
-  font-family: 'EB Garamond', serif;
-  font-size: clamp(30px, 3.4vw, 44px);
-  line-height: .95;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: .08em;
-  white-space: nowrap;
-}
-.wjx-subtitle{
-  margin-top: 5px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: .36em;
-  text-transform: uppercase;
-  color: rgba(115,92,0,.86);
-  white-space: nowrap;
-}
-.wjx-menu{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px;
-  border: 1px solid rgba(211,195,188,.48);
-  border-radius: 999px;
-  background: rgba(255,255,255,.42);
-  box-shadow: 0 8px 25px rgba(54,33,21,.045);
-}
-.wjx-link{
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 38px;
-  padding: 0 15px;
-  border-radius: 999px;
-  color: #4f453f;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .055em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color .25s ease, background .25s ease, transform .25s ease;
-}
-.wjx-link::after{
-  content: "";
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 6px;
-  height: 2px;
-  border-radius: 999px;
-  background: #735c00;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform .25s ease;
-}
-.wjx-link:hover,
-.wjx-link.is-active{
-  color: #735c00;
-  background: #fff1eb;
-  transform: translateY(-1px);
-}
-.wjx-link:hover::after,
-.wjx-link.is-active::after{
-  transform: scaleX(1);
-}
-.wjx-toggle{
-  display: none;
-  width: 46px;
-  height: 46px;
-  border-radius: 999px;
-  border: 1px solid rgba(211,195,188,.75);
-  background: rgba(255,255,255,.62);
-  color: #362115;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 20px rgba(54,33,21,.08);
-}
-.wjx-toggle .wjx-close{ display: none; }
-.wjx-toggle.is-open .wjx-open{ display: none; }
-.wjx-toggle.is-open .wjx-close{ display: inline-block; }
-.wjx-mobile{
-  display: none;
-  padding: 0 20px 18px;
-}
-.wjx-mobile.is-open{
-  display: block;
-}
-.wjx-mobile-card{
-  max-width: 560px;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 22px;
-  border: 1px solid rgba(211,195,188,.62);
-  background: rgba(255,255,255,.72);
-  box-shadow: 0 16px 35px rgba(54,33,21,.10);
-}
-.wjx-mobile-link{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 50px;
-  padding: 0 16px;
-  border-radius: 16px;
-  color: #4f453f;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 850;
-  letter-spacing: .055em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background .25s ease, color .25s ease, transform .25s ease;
-}
-.wjx-mobile-link::after{
-  content: "";
-  width: 34px;
-  height: 2px;
-  border-radius: 999px;
-  background: currentColor;
-  opacity: 0;
-  transform: scaleX(.35);
-  transition: opacity .25s ease, transform .25s ease;
-}
-.wjx-mobile-link:hover,
-.wjx-mobile-link.is-active{
-  background: #ffeae0;
-  color: #735c00;
-  transform: translateX(2px);
-}
-.wjx-mobile-link:hover::after,
-.wjx-mobile-link.is-active::after{
-  opacity: 1;
-  transform: scaleX(1);
-}
-@media (max-width: 900px){
-  .wjx-menu{ display: none; }
-  .wjx-toggle{ display: inline-flex; flex-shrink: 0; }
-  .wjx-inner{ min-height: 74px; padding: 0 18px; }
-  .wjx-title{ font-size: 30px; letter-spacing: .06em; }
-  .wjx-subtitle{ font-size: 8px; letter-spacing: .25em; }
-}
-@media (max-width: 380px){
-  .wjx-title{ font-size: 26px; }
-  .wjx-subtitle{ letter-spacing: .16em; }
-  .wjx-toggle{ width: 42px; height: 42px; }
-}
-
+      position: absolute !important; inset: 0 auto auto 0 !important;
+      width: 210mm !important; min-height: 297mm !important; max-width: none !important;
+      margin: 0 !important; padding: 8mm !important; box-shadow: none !important;
+      transform: none !important; border-radius: 0 !important; background: #fcf9f2 !important;
+      page-break-after: avoid !important; page-break-inside: avoid !important; overflow: hidden !important;
+    }
+    #cert-container .prada-gold-border {
+      min-height: calc(297mm - 16mm) !important; box-sizing: border-box !important;
+    }
+    .no-print, nav, footer, .ad-slot { display: none !important; visibility: hidden !important; }
+  }
 </style>
 </head>
 <body class="text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
-<!-- TopNavBar Final -->
+
 <nav class="wjx-nav">
   <div class="wjx-inner">
-    <a class="wjx-brand" href="index.html" aria-label="Weton Jawi Beranda">
+    <a class="wjx-brand" href="#beranda" aria-label="Weton Jawi Beranda">
       <span class="wjx-title">Weton Jawi</span>
       <span class="wjx-subtitle">Serat Primbon Pawiwahan</span>
     </a>
     <div class="wjx-menu" aria-label="Menu utama">
-      <a class="wjx-link is-active" href="index.html">Hitung Weton</a>
-<a class="wjx-link " href="tanggal-jawa.html">Cari Tanggal Baik</a>
-<a class="wjx-link " href="weton-saya.html">Weton Saya</a>
-<a class="wjx-link " href="tentang-budaya.html">Tentang Budaya</a>
+      <a class="wjx-link" href="#kalkulator">Hitung Weton</a>
+      <a class="wjx-link" href="#tanggal-baik">Cari Tanggal Baik</a>
+      <a class="wjx-link" href="#weton-saya">Weton Saya</a>
+      <a class="wjx-link" href="#tentang-budaya">Tentang Budaya</a>
     </div>
     <button id="wjxToggle" class="wjx-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="wjxMobile">
       <span class="material-symbols-outlined wjx-open">menu</span>
@@ -662,372 +322,674 @@ arti weton jawa, budaya jawa, tradisi jawa, primbon leluhur jawa, makna neptu ja
   </div>
   <div id="wjxMobile" class="wjx-mobile" aria-hidden="true">
     <div class="wjx-mobile-card">
-      <a class="wjx-mobile-link is-active" href="index.html">Hitung Weton</a>
-<a class="wjx-mobile-link " href="tanggal-jawa.html">Cari Tanggal Baik</a>
-<a class="wjx-mobile-link " href="weton-saya.html">Weton Saya</a>
-<a class="wjx-mobile-link " href="tentang-budaya.html">Tentang Budaya</a>
+      <a class="wjx-mobile-link" href="#kalkulator">Hitung Weton</a>
+      <a class="wjx-mobile-link" href="#tanggal-baik">Cari Tanggal Baik</a>
+      <a class="wjx-mobile-link" href="#weton-saya">Weton Saya</a>
+      <a class="wjx-mobile-link" href="#tentang-budaya">Tentang Budaya</a>
     </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-40">
-<!-- Decorative Background -->
-<div class="absolute inset-0 z-0 batik-overlay flex justify-center items-center pointer-events-none">
-<img alt="" class="w-full h-full object-cover" data-alt="A sophisticated and detailed Javanese Parang batik pattern rendered in thin, shimmering gold lines over a warm cream background. The lighting is soft and ambient, creating a luxurious and tactile paper-like texture. The overall mood is one of cultural heritage meeting modern minimalist refinement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARuXzIwrezLv0H0uGJYSkACgoNTohrkolg9ZRmxEUGFJnQXxPXgtjYgDE2phJCJICMp3XRBRF_vEr4hj6aXHUz0tcU56LRToBpxMLLSjU_ipqlULyWkNpZ2tS9FGBZHH3Fxx8fRhsS9TRVY9rOFNrpOoOduyWnvzffO-2hX88xRcdx1uu4MuI5JGLWiksyqZlMqiL4ThwG8I1wWLJOv-8cugURWkNztWBIzayzQe6Lq9l_Exp1rjxHhaah7fkg-VWsT9WKzkiqNXE"/>
+<!-- SLOT IKLAN 1 — BAWAH NAVBAR (banner atas): tempel script zona Monetag di dalam div ini -->
+<div class="ad-slot ad-slot-wide no-print" aria-label="Iklan">
+  <div class="ad-slot-box">Slot Iklan</div>
 </div>
-<div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7">
-<div class="mb-6 inline-flex items-center gap-2 px-3 py-1 bg-primary text-secondary-fixed rounded-full">
-<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
-<span class="font-label-md text-[12px] tracking-widest uppercase">Tradisi Leluhur Jawa</span>
-</div>
-<h1 class="font-headline-xl text-headline-xl md:text-[64px] md:leading-[72px] text-primary mb-6 max-w-2xl">
-                            Menemukan Harmoni dalam <span class="italic text-secondary">Pernikahan</span> Melalui Weton
-                        </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
-                            Weton bukan sekadar perhitungan hari lahir, melainkan filosofi mendalam tentang penyelarasan energi semesta antara dua jiwa yang akan menempuh hidup baru.
-                        </p>
-<div class="flex items-center gap-6">
-<a class="bg-secondary text-white px-8 py-4 rounded-none shadow-lg hover:bg-primary transition-colors font-label-md uppercase tracking-widest text-sm flex items-center gap-2" href="#kalkulator">
-                                Hitung Kecocokan
-                                <span class="material-symbols-outlined">arrow_downward</span>
-</a>
-<div class="flex -space-x-3">
-<img alt="" class="w-10 h-10 rounded-full border-2 border-surface" data-alt="A close-up portrait of a serene Javanese man wearing a traditional blangkon, smiling subtly. The background is a soft-focus warm interior with natural lighting. The visual style is premium lifestyle photography with rich, organic tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6cFCwumYA_obC4uj9Hsk6iP0xCN03N2Rlj2469CDkT4OYyfziYmAhDU0P6PrP9wJW5wRP9p58tsvpa_NewYw2UD1X8by1BbqE-lqgnT9RauFbqq3tlmJ-K19S84S4bdq61fu9Zhu7Otf2dxz2CrqG59V-szOKTd-Yvjfrq_HacbHsJn-jMOHiLwvJASzGicIn0FE9ELp68x9jOjpRLVcLKZdGn7G4i4_aZcZ4x8PkCf2_rscnV0idjwcCQ8oNxbH_BByEpMvPcBs"/>
-<img alt="" class="w-10 h-10 rounded-full border-2 border-surface" data-alt="A close-up portrait of a graceful Javanese woman wearing a traditional kebaya with a soft smile. The lighting is high-key and elegant, emphasizing her features against a minimalist, warm cream backdrop. High-end editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ry97q1Kwlpe129dgwTGfyZmQwnZ1jPS7D1W0mb1YeTgbqM82n3ev6Lvx414DYMHb7FPIJ-o2lWcb-0pVt6z2OPXMS1U5ZCvAYh8I4lDfRswiV9G7brwNT2ATkRmp5NNaxv_8SioIKxmMBi9cPdgRcoxWIbNKzSju_3xmbUrIbACITCW9HrfydHfjDShooqfqtN21pvaGTu_MeeohPe4vSmnfa5H9T6NVtFVc_TMhlVe-7Oa4iTOFe2zPINOhGW10Zy97K29wVWg"/>
-<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center text-[10px] font-bold">1k+</div>
-</div>
-<span class="text-label-md text-on-surface-variant">Pasangan Terbantu</span>
-</div>
-</div>
-<div class="lg:col-span-5 hidden lg:block relative">
-<div class="relative w-full aspect-[4/5] bg-surface-container-low rounded-t-full border border-outline-variant/30 overflow-hidden shadow-2xl">
-<img alt="" class="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]" data-alt="A minimalist and artistic representation of Javanese Wayang Kulit puppets depicting a legendary couple, Kamajaya and Kamaratih. The style is modern palatial, with thin gold outlines and subtle earth-toned textures. The background is a clean off-white with organic paper grain, illuminated by soft golden light from the side." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKz7aOiiXggRAHvD8rBRnGwNoVHjJkmY8prYIWYCwBzBA5TsWfH3XbYWnoMfQIXBNteSKNeqAxmix2o4G6JrZghAQzSRfz_xSMnO62cO5TQG-HX9eM8MbS8w48rGDDbZJ7ttEp7W46NyJ3oxH1SDwk5YRoUEQmWC0fsTg7dF6LoligRbPU31_6GUhjlJ5w47wffUUUY3sGpQcAC0Kl5bM54_7m14WIOsD513hau89M4Ykf3y-yuuNFD31RodCPhwKRd2jUINBMU-0"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-</div>
-<!-- Floating Accent -->
-<div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl border border-secondary/20 max-w-[200px]">
-<p class="font-headline-md text-headline-md text-secondary mb-1">98%</p>
-<p class="font-label-md text-[12px] text-on-surface-variant uppercase tracking-tighter">Akurasi Perhitungan Primbon Jawa</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Description Section -->
-<section class="py-24 bg-surface-container-lowest">
-<div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
-<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-<div class="w-12 h-[1px] bg-secondary mb-6"></div>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Filosofi Penyatuan</h2>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                        Dalam tradisi Jawa, pernikahan adalah penyatuan dua "Neptu"—nilai numerik dari hari dan pasaran kelahiran. Perhitungan ini memberikan gambaran tentang karakter, rejeki, dan dinamika hubungan pasangan di masa depan, membantu mereka untuk saling melengkapi dan bersiap menghadapi rintangan hidup bersama.
-                    </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<div class="flex flex-col items-center text-center p-8 bg-surface-container-low border-b-2 border-transparent hover:border-secondary transition-all">
-<span class="material-symbols-outlined text-secondary text-4xl mb-4">brightness_high</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-3">Hari Kelahiran</h3>
-<p class="text-on-surface-variant font-body-md">Mewakili elemen dasar jiwa manusia dan karakter bawaan lahir.</p>
-</div>
-<div class="flex flex-col items-center text-center p-8 bg-surface-container-low border-b-2 border-transparent hover:border-secondary transition-all">
-<span class="material-symbols-outlined text-secondary text-4xl mb-4">cyclone</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-3">Pasaran Jawa</h3>
-<p class="text-on-surface-variant font-body-md">Siklus lima hari yang menentukan arah langkah dan keberuntungan.</p>
-</div>
-<div class="flex flex-col items-center text-center p-8 bg-surface-container-low border-b-2 border-transparent hover:border-secondary transition-all">
-<span class="material-symbols-outlined text-secondary text-4xl mb-4">balance</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-3">Neptu Total</h3>
-<p class="text-on-surface-variant font-body-md">Akumulasi nilai yang menjadi kunci prediksi kecocokan pasangan.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Calculator Form Section -->
-<section class="py-24 md:py-40 relative" id="kalkulator">
-<div class="max-w-5xl mx-auto px-container-padding-mobile">
-<div class="bg-white p-8 md:p-16 border border-outline-variant/30 shadow-sm relative overflow-hidden">
-<!-- Subtle pattern background for card -->
-<div class="absolute top-0 right-0 w-64 h-64 opacity-5 -mr-20 -mt-20">
-<img alt="" class="w-full h-full object-contain rotate-12" data-alt="A detailed macro view of traditional Javanese Batik motifs in dark brown and gold. The pattern is intricate and geometric, providing a subtle textural background. The lighting is soft and flat to maintain legibility of elements placed on top." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPPviC3sZNrYCeKZnLouR-bkfQQRbTBqDuF6dqFHsyEtCB7gQp4ts209MeKaCMjsnLSZzMVYx6C5jNivtQPpFtgRzWcuc_y7CBd3ZO7d-oYO2xySvIv-xqW_DmnAByrtxrLfLR_ERn4jkGeDCcA5NO4oIV-dajpOA5GF4HI9HcSUxDxBn8KW-fmF8bBnJbnh0fbf8uE6QY15aReMM6lfDeGuONLOxsQYzji-kNIPkx2_ZIPmL8JA5DMXn8MOwBMAgpZk84QZ3hhEs"/>
-</div>
-<div class="relative z-10">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Kalkulator Weton</h2>
-<p class="text-on-surface-variant font-label-md uppercase tracking-wider">Masukkan Data Kelahiran Pasangan</p>
-</div>
-<div class="hidden md:block text-right">
-<span class="material-symbols-outlined text-secondary text-5xl">favorite</span>
-</div>
-</div>
-<form class="space-y-12" id="formWeton">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-<!-- Male Side -->
-<div class="space-y-8">
-<div class="flex items-center gap-3 pb-2 border-b border-secondary/20">
-<span class="material-symbols-outlined text-primary">person</span>
-<h3 class="font-label-md text-primary uppercase tracking-widest">Data Pria</h3>
-</div>
-<div class="space-y-6">
-<div class="flex flex-col">
-<label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Nama Lengkap</label>
-<input id="namaPria" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary" placeholder="Contoh: Raden Mas" type="text"/>
-</div>
-<div class="flex flex-col">
-<label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Tanggal Lahir</label>
-<input id="tglPria" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary appearance-none" type="date"/>
-</div>
-</div>
-</div>
-<!-- Female Side -->
-<div class="space-y-8">
-<div class="flex items-center gap-3 pb-2 border-b border-secondary/20">
-<span class="material-symbols-outlined text-primary">person_3</span>
-<h3 class="font-label-md text-primary uppercase tracking-widest">Data Wanita</h3>
-</div>
-<div class="space-y-6">
-<div class="flex flex-col">
-<label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Nama Lengkap</label>
-<input id="namaWanita" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary" placeholder="Contoh: Sekar Arum" type="text"/>
-</div>
-<div class="flex flex-col">
-<label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Tanggal Lahir</label>
-<input id="tglWanita" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary appearance-none" type="date"/>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pt-8 border-t border-secondary/20">
-  <h3 class="font-label-md text-primary uppercase tracking-widest mb-6">
-    Rencana Akad
-  </h3>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="flex flex-col">
-      <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Bulan</label>
-      <select id="bulanNikah" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary">
-        <option value="0">Januari</option>
-        <option value="1">Februari</option>
-        <option value="2">Maret</option>
-        <option value="3">April</option>
-        <option value="4">Mei</option>
-        <option value="5">Juni</option>
-        <option value="6">Juli</option>
-        <option value="7">Agustus</option>
-        <option value="8">September</option>
-        <option value="9">Oktober</option>
-        <option value="10">November</option>
-        <option value="11">Desember</option>
-      </select>
-    </div>
-
-    <div class="flex flex-col">
-      <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Tahun</label>
-      <input id="tahunNikah" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary" type="number" value="2028" min="1900">
+<section id="beranda" class="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-40">
+  <div class="absolute inset-0 z-0 batik-overlay flex justify-center items-center pointer-events-none">
+    <img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARuXzIwrezLv0H0uGJYSkACgoNTohrkolg9ZRmxEUGFJnQXxPXgtjYgDE2phJCJICMp3XRBRF_vEr4hj6aXHUz0tcU56LRToBpxMLLSjU_ipqlULyWkNpZ2tS9FGBZHH3Fxx8fRhsS9TRVY9rOFNrpOoOduyWnvzffO-2hX88xRcdx1uu4MuI5JGLWiksyqZlMqiL4ThwG8I1wWLJOv-8cugURWkNztWBIzayzQe6Lq9l_Exp1rjxHhaah7fkg-VWsT9WKzkiqNXE"/>
+  </div>
+  <div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7">
+        <div class="mb-6 inline-flex items-center gap-2 px-3 py-1 bg-primary text-secondary-fixed rounded-full">
+          <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+          <span class="font-label-md text-[12px] tracking-widest uppercase">Tradisi Leluhur Jawa</span>
+        </div>
+        <h1 class="font-headline-xl text-headline-xl md:text-[64px] md:leading-[72px] text-primary mb-6 max-w-2xl">
+          Menemukan Harmoni dalam <span class="italic text-secondary">Pernikahan</span> Melalui Weton
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
+          Weton bukan sekadar perhitungan hari lahir, melainkan filosofi mendalam tentang penyelarasan energi semesta antara dua jiwa yang akan menempuh hidup baru.
+        </p>
+        <div class="flex items-center gap-6">
+          <a class="bg-secondary text-white px-8 py-4 rounded-none shadow-lg hover:bg-primary transition-colors font-label-md uppercase tracking-widest text-sm flex items-center gap-2" href="#kalkulator">
+            Hitung Kecocokan
+            <span class="material-symbols-outlined">arrow_downward</span>
+          </a>
+          <div class="flex -space-x-3">
+            <img alt="" class="w-10 h-10 rounded-full border-2 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6cFCwumYA_obC4uj9Hsk6iP0xCN03N2Rlj2469CDkT4OYyfziYmAhDU0P6PrP9wJW5wRP9p58tsvpa_NewYw2UD1X8by1BbqE-lqgnT9RauFbqq3tlmJ-K19S84S4bdq61fu9Zhu7Otf2dxz2CrqG59V-szOKTd-Yvjfrq_HacbHsJn-jMOHiLwvJASzGicIn0FE9ELp68x9jOjpRLVcLKZdGn7G4i4_aZcZ4x8PkCf2_rscnV0idjwcCQ8oNxbH_BByEpMvPcBs"/>
+            <img alt="" class="w-10 h-10 rounded-full border-2 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ry97q1Kwlpe129dgwTGfyZmQwnZ1jPS7D1W0mb1YeTgbqM82n3ev6Lvx414DYMHb7FPIJ-o2lWcb-0pVt6z2OPXMS1U5ZCvAYh8I4lDfRswiV9G7brwNT2ATkRmp5NNaxv_8SioIKxmMBi9cPdgRcoxWIbNKzSju_3xmbUrIbACITCW9HrfydHfjDShooqfqtN21pvaGTu_MeeohPe4vSmnfa5H9T6NVtFVc_TMhlVe-7Oa4iTOFe2zPINOhGW10Zy97K29wVWg"/>
+            <div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center text-[10px] font-bold">1k+</div>
+          </div>
+          <span class="text-label-md text-on-surface-variant">Pasangan Terbantu</span>
+        </div>
+      </div>
+      <div class="lg:col-span-5 hidden lg:block relative">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-low rounded-t-full border border-outline-variant/30 overflow-hidden shadow-2xl">
+          <img alt="" class="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKz7aOiiXggRAHvD8rBRnGwNoVHjJkmY8prYIWYCwBzBA5TsWfH3XbYWnoMfQIXBNteSKNeqAxmix2o4G6JrZghAQzSRfz_xSMnO62cO5TQG-HX9eM8MbS8w48rGDDbZJ7ttEp7W46NyJ3oxH1SDwk5YRoUEQmWC0fsTg7dF6LoligRbPU31_6GUhjlJ5w47wffUUUY3sGpQcAC0Kl5bM54_7m14WIOsD513hau89M4Ykf3y-yuuNFD31RodCPhwKRd2jUINBMU-0"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl border border-secondary/20 max-w-[200px]">
+          <p class="font-headline-md text-headline-md text-secondary mb-1">98%</p>
+          <p class="font-label-md text-[12px] text-on-surface-variant uppercase tracking-tighter">Akurasi Perhitungan Primbon Jawa</p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
+
+<!-- SLOT IKLAN 2 — SETELAH HERO -->
+<div class="ad-slot no-print" aria-label="Iklan">
+  <div class="ad-slot-box">Slot Iklan</div>
 </div>
 
-<div class="pt-8 flex flex-col items-center">
-<button id="btnHitung" class="group relative w-full md:w-auto min-w-[280px] bg-secondary text-white px-10 py-5 overflow-hidden transition-all duration-500 hover:shadow-2xl" type="submit">
-  <span class="relative z-10 font-label-md uppercase tracking-[0.2em] text-sm">Cari Tanggal Akad</span>
-  <div class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-</button>
-<p class="mt-6 text-[12px] text-on-surface-variant italic flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">lock</span>
-Data hanya diproses di browser Anda.
-</p>
-</div>
-</form>
-<div id="hasilWeton" class="mt-16 hidden"></div>
-</div>
-</div>
-<!-- Divider with Ornament -->
-<div class="mt-24 flex items-center justify-center">
-<div class="h-[1px] bg-outline-variant/50 w-full"></div>
-<div class="mx-8 flex items-center text-secondary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
-</div>
-<div class="h-[1px] bg-outline-variant/50 w-full"></div>
-</div>
-</div>
+<section class="py-24 bg-surface-container-lowest">
+  <div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
+    <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+      <div class="w-12 h-[1px] bg-secondary mb-6"></div>
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Filosofi Penyatuan</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Dalam tradisi Jawa, pernikahan adalah penyatuan dua "Neptu" — nilai numerik dari hari dan pasaran kelahiran. Perhitungan ini memberikan gambaran tentang karakter, rejeki, dan dinamika hubungan pasangan di masa depan.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="flex flex-col items-center text-center p-8 bg-surface-container-low border-b-2 border-transparent hover:border-secondary transition-all">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">brightness_high</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Hari Kelahiran</h3>
+        <p class="text-on-surface-variant font-body-md">Mewakili elemen dasar jiwa manusia dan karakter bawaan lahir.</p>
+      </div>
+      <div class="flex flex-col items-center text-center p-8 bg-surface-container-low border-b-2 border-transparent hover:border-secondary transition-all">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">cyclone</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Pasaran Jawa</h3>
+        <p class="text-on-surface-variant font-body-md">Siklus lima hari yang menentukan arah langkah dan keberuntungan.</p>
+      </div>
+      <div class="flex flex-col items-center text-center p-8 bg-surface-container-low border-b-2 border-transparent hover:border-secondary transition-all">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">balance</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Neptu Total</h3>
+        <p class="text-on-surface-variant font-body-md">Akumulasi nilai yang menjadi kunci prediksi kecocokan pasangan.</p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- History/Testimonial Bento Grid -->
+<section class="py-24 md:py-40 relative" id="kalkulator">
+  <div class="max-w-5xl mx-auto px-container-padding-mobile">
+    <div class="bg-white p-8 md:p-16 border border-outline-variant/30 shadow-sm relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 opacity-5 -mr-20 -mt-20">
+        <img alt="" class="w-full h-full object-contain rotate-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPPviC3sZNrYCeKZnLouR-bkfQQRbTBqDuF6dqFHsyEtCB7gQp4ts209MeKaCMjsnLSZzMVYx6C5jNivtQPpFtgRzWcuc_y7CBd3ZO7d-oYO2xySvIv-xqW_DmnAByrtxrLfLR_ERn4jkGeDCcA5NO4oIV-dajpOA5GF4HI9HcSUxDxBn8KW-fmF8bBnJbnh0fbf8uE6QY15aReMM6lfDeGuONLOxsQYzji-kNIPkx2_ZIPmL8JA5DMXn8MOwBMAgpZk84QZ3hhEs"/>
+      </div>
+      <div class="relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+          <div>
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-2">Kalkulator Weton</h2>
+            <p class="text-on-surface-variant font-label-md uppercase tracking-wider">Masukkan Data Kelahiran Pasangan</p>
+          </div>
+          <div class="hidden md:block text-right">
+            <span class="material-symbols-outlined text-secondary text-5xl">favorite</span>
+          </div>
+        </div>
+        <form class="space-y-12" id="formWeton">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div class="space-y-8">
+              <div class="flex items-center gap-3 pb-2 border-b border-secondary/20">
+                <span class="material-symbols-outlined text-primary">person</span>
+                <h3 class="font-label-md text-primary uppercase tracking-widest">Data Pria</h3>
+              </div>
+              <div class="space-y-6">
+                <div class="flex flex-col">
+                  <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Nama Lengkap</label>
+                  <input id="namaPria" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary" placeholder="Contoh: Raden Bagus" type="text"/>
+              </div>
+                <div class="flex flex-col">
+                  <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Tanggal Lahir</label>
+                  <input id="tglPria" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary appearance-none" type="date"/>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <div class="flex items-center gap-3 pb-2 border-b border-secondary/20">
+                <span class="material-symbols-outlined text-primary">person_3</span>
+                <h3 class="font-label-md text-primary uppercase tracking-widest">Data Wanita</h3>
+              </div>
+              <div class="space-y-6">
+                <div class="flex flex-col">
+                  <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Nama Lengkap</label>
+                  <input id="namaWanita" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary" placeholder="Contoh: Raden Ayu" type="text"/>
+                </div>
+                <div class="flex flex-col">
+                  <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Tanggal Lahir</label>
+                  <input id="tglWanita" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary appearance-none" type="date"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-8 border-t border-secondary/20">
+            <h3 class="font-label-md text-primary uppercase tracking-widest mb-6">Rencana Akad</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="flex flex-col">
+                <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Bulan</label>
+                <select id="bulanNikah" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary">
+                  <option value="0">Januari</option><option value="1">Februari</option><option value="2">Maret</option>
+                  <option value="3">April</option><option value="4">Mei</option><option value="5">Juni</option>
+                  <option value="6">Juli</option><option value="7">Agustus</option><option value="8">September</option>
+                  <option value="9">Oktober</option><option value="10">November</option><option value="11">Desember</option>
+                </select>
+              </div>
+              <div class="flex flex-col">
+                <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1">Tahun</label>
+                <input id="tahunNikah" class="bg-transparent input-underline py-2 text-body-lg font-headline-md text-primary" type="number" value="2028" min="1900">
+              </div>
+            </div>
+          </div>
+          <div class="pt-8 flex flex-col items-center">
+            <button id="btnHitung" class="group relative w-full md:w-auto min-w-[280px] bg-secondary text-white px-10 py-5 overflow-hidden transition-all duration-500 hover:shadow-2xl" type="submit">
+              <span class="relative z-10 font-label-md uppercase tracking-[0.2em] text-sm">Cari Tanggal Akad</span>
+              <div class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            </button>
+            <p class="mt-6 text-[12px] text-on-surface-variant italic flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm">lock</span>
+              Data hanya diproses di browser Anda.
+            </p>
+          </div>
+        </form>
+        <div id="hasilWeton" class="mt-16 hidden"></div>
+      </div>
+    </div>
+
+    <!-- SLOT IKLAN 3 — SETELAH KALKULATOR / HASIL -->
+    <div class="ad-slot no-print" aria-label="Iklan">
+      <div class="ad-slot-box">Slot Iklan</div>
+    </div>
+
+    <div class="mt-24 flex items-center justify-center">
+      <div class="h-[1px] bg-outline-variant/50 w-full"></div>
+      <div class="mx-8 flex items-center text-secondary">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+      </div>
+      <div class="h-[1px] bg-outline-variant/50 w-full"></div>
+    </div>
+  </div>
+</section>
 <section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Inspirasi Kebahagiaan</h2>
-<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-card-gap">
-<!-- Bento Item 1 -->
-<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden">
-<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-end portrait of a couple in elegant traditional Javanese wedding attire, standing in a sun-drenched colonial-style courtyard. The mood is serene and romantic, with warm golden-hour lighting. The colors are rich in mahogany, gold, and ivory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADe7ZIL6DCWy5nJcIPrNOXXsnA3F2zriQGuRfrnaOf0Bal1Ricar91OgQSoRMARlayZ6kEsywE_0D2KUm9v9GM_vwJen1CvRmiXlNotcipKHvKmJ91LfNwpdl318zK7zJJxFSQGgEki1p1PwiXgepy2DFIabBav-jehRj59KDzD74yRCYfu_u_9rd37ZGVt1KlqJdkIDduifP9if0HtUriCw_l38fyiZjXBPcv9wYgY2wpgnNOdWmBCszuYyooY0u2PF7BalJnpJI"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-8 flex flex-col justify-end">
-<h4 class="text-white font-headline-md mb-2">Suci &amp; Bagus</h4>
-<p class="text-white/80 font-body-md">"Hasil weton membantu kami memahami cara berkomunikasi yang lebih baik sejak awal pernikahan."</p>
-</div>
-</div>
-<!-- Bento Item 2 -->
-<div class="md:col-span-2 bg-secondary-container p-8 flex flex-col justify-center">
-<span class="material-symbols-outlined text-primary mb-4 text-4xl">menu_book</span>
-<h4 class="font-headline-md text-primary mb-2">Kearifan Primbon</h4>
-<p class="text-on-secondary-container font-body-md">Pelajari lebih lanjut tentang perhitungan Neptu, Watak, dan ramalan rejeki menurut kitab leluhur.</p>
-<a class="mt-4 font-label-md text-primary uppercase underline underline-offset-8" href="tentang-budaya.html">Baca Selengkapnya</a>
-</div>
-<!-- Bento Item 3 -->
-<div class="bg-surface-container p-8 border border-outline-variant/30 flex flex-col items-center text-center justify-center">
-<h5 class="font-data-neptu text-[48px] text-secondary mb-1">10rb+</h5>
-<p class="font-label-md text-on-surface-variant uppercase tracking-tighter">Perhitungan Selesai</p>
-</div>
-<!-- Bento Item 4 -->
-<div class="bg-tertiary text-white p-8 flex flex-col justify-center">
-<h4 class="font-headline-md mb-2 italic">Rahayu Sagung Dumadi</h4>
-<p class="text-tertiary-fixed-dim text-sm">Semoga keselamatan dan kebahagiaan menyertai kita semua.</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Inspirasi Kebahagiaan</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-card-gap">
+      <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden">
+        <img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADe7ZIL6DCWy5nJcIPrNOXXsnA3F2zriQGuRfrnaOf0Bal1Ricar91OgQSoRMARlayZ6kEsywE_0D2KUm9v9GM_vwJen1CvRmiXlNotcipKHvKmJ91LfNwpdl318zK7zJJxFSQGgEki1p1PwiXgepy2DFIabBav-jehRj59KDzD74yRCYfu_u_9rd37ZGVt1KlqJdkIDduifP9if0HtUriCw_l38fyiZjXBPcv9wYgY2wpgnNOdWmBCszuYyooY0u2PF7BalJnpJI"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-8 flex flex-col justify-end">
+          <h4 class="text-white font-headline-md mb-2">Suci &amp; Bagus</h4>
+          <p class="text-white/80 font-body-md">"Hasil weton membantu kami memahami cara berkomunikasi yang lebih baik sejak awal pernikahan."</p>
+        </div>
+      </div>
+      <div class="md:col-span-2 bg-secondary-container p-8 flex flex-col justify-center">
+        <span class="material-symbols-outlined text-primary mb-4 text-4xl">menu_book</span>
+        <h4 class="font-headline-md text-primary mb-2">Kearifan Primbon</h4>
+        <p class="text-on-secondary-container font-body-md">Pelajari lebih lanjut tentang perhitungan Neptu, Watak, dan ramalan rejeki menurut kitab leluhur.</p>
+        <a class="mt-4 font-label-md text-primary uppercase underline underline-offset-8" href="#tentang-budaya">Baca Selengkapnya</a>
+      </div>
+      <div class="bg-surface-container p-8 border border-outline-variant/30 flex flex-col items-center text-center justify-center">
+        <h5 class="font-data-neptu text-[48px] text-secondary mb-1">10rb+</h5>
+        <p class="font-label-md text-on-surface-variant uppercase tracking-tighter">Perhitungan Selesai</p>
+      </div>
+      <div class="bg-tertiary text-white p-8 flex flex-col justify-center">
+        <h4 class="font-headline-md mb-2 italic">Rahayu Sagung Dumadi</h4>
+        <p class="text-tertiary-fixed-dim text-sm">Semoga keselamatan dan kebahagiaan menyertai kita semua.</p>
+      </div>
+    </div>
+
+    <!-- SLOT IKLAN 4 — AREA KOSONG SETELAH GRID INSPIRASI -->
+    <div class="ad-slot no-print" aria-label="Iklan">
+      <div class="ad-slot-box">Slot Iklan</div>
+    </div>
+  </div>
 </section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-low border-t border-outline-variant/50 mt-20">
-<div class="flex flex-col md:flex-row justify-between items-center gap-card-gap w-full px-container-padding-mobile md:px-container-padding-desktop py-12 max-w-7xl mx-auto">
-<div class="flex flex-col items-center md:items-start">
-<div class="font-headline-md text-headline-md text-primary mb-2">Weton Jawi</div>
-<p class="text-on-surface-variant font-label-md text-label-md">© 2024 Tradisi Jawi. Rahayu Sagung Dumadi.</p>
+
+<section id="tanggal-baik" class="batik-pattern border-t border-outline-variant/40 py-24">
+  <div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
+    <header class="mb-12 text-center md:text-left">
+      <span class="font-label-md text-label-md text-secondary uppercase tracking-[0.25em] mb-3 block">Kalender Jawa</span>
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Pencarian Tanggal Baik Pernikahan</h2>
+      <p class="text-on-surface-variant max-w-2xl font-body-lg text-body-lg">Menemukan keselarasan semesta untuk hari bahagia Anda melalui perhitungan Primbon Betaljemur Adammakna yang sakral.</p>
+    </header>
+    <div class="flex flex-col xl:flex-row gap-card-gap xl:items-start">
+      <aside class="w-full lg:w-72 flex-shrink-0 space-y-8 xl:sticky xl:top-28">
+        <div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/50 shadow-sm">
+          <h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Filter Utama</h3>
+          <div class="space-y-6">
+            <div>
+              <label class="font-label-md text-label-md text-on-surface-variant block mb-3">Pilih Bulan</label>
+              <select id="bulanInput" class="w-full bg-transparent border-b border-outline-variant focus:border-secondary outline-none py-2 text-primary font-body-md appearance-none cursor-pointer">
+                <option value="0">Januari</option><option value="1">Februari</option><option value="2">Maret</option>
+                <option value="3">April</option><option value="4">Mei</option><option value="5">Juni</option>
+                <option value="6">Juli</option><option value="7">Agustus</option><option value="8">September</option>
+                <option value="9">Oktober</option><option value="10">November</option><option value="11">Desember</option>
+              </select>
+            </div>
+            <div>
+              <label class="font-label-md text-label-md text-on-surface-variant block mb-3">Tahun</label>
+              <input id="tahunInput" type="number" value="2028" class="w-full bg-transparent border-b border-outline-variant focus:border-secondary outline-none py-2 text-primary font-body-md">
+            </div>
+            <button id="btnTampilkan" class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md uppercase tracking-widest hover:bg-secondary transition">
+              Tampilkan Kalender
+            </button>
+            <div>
+              <label class="font-label-md text-label-md text-on-surface-variant block mb-4">Kriteria Primbon</label>
+              <div class="space-y-3">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input id="filterSri" checked class="rounded border-outline text-secondary focus:ring-secondary" type="checkbox">
+                  <span class="text-body-md group-hover:text-primary transition-colors">Tampilkan Sri (Rezeki)</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input id="filterGedhong" checked class="rounded border-outline text-secondary focus:ring-secondary" type="checkbox">
+                  <span class="text-body-md group-hover:text-primary transition-colors">Tampilkan Gedhong (Harta)</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input id="filterLungguh" checked class="rounded border-outline text-secondary focus:ring-secondary" type="checkbox">
+                  <span class="text-body-md group-hover:text-primary transition-colors">Tampilkan Lungguh (Kedudukan)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-xl h-48 group">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApsQ_PvoD8u9oVauGueVlbaphayY2S9qJ3XQ6hBUl14NUSGlvM7Dmsr1wYkM40p9VwpzOXPaUt7zj9EnA7d04XBM5DuPE6uXfzUmu1ShbklncEvvqS42GId_Tp8m_lG875rZieX1KdI3QisE1RBJSgd99dKS5DwjevT7GDGElzObjl7o6muU68UuVqg0RqVBukcAqs_La0CCVvGtan8Xl1tS9OxxK-D6XOn8nu6Zr9ZPpyD94N4zBrUi2ujSfJuP2RnTO4TSw1uC4">
+          <div class="absolute inset-0 bg-primary/40 flex items-center justify-center p-6 text-center">
+            <p class="text-white font-headline-md text-headline-md italic">"Alusing Budi, Luhuring Pakarti"</p>
+          </div>
+        </div>
+      </aside>
+      <!-- Main Content Area -->
+      <div class="flex-grow space-y-12 min-w-0">
+        <div class="flex flex-wrap gap-6 items-center bg-surface-container-low/50 p-4 rounded-lg border border-outline-variant/30">
+          <span class="font-label-md text-label-md text-on-surface-variant uppercase">Keterangan:</span>
+          <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-emerald-600"></div>
+            <span class="text-body-md">Sangat Baik</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-secondary"></div>
+            <span class="text-body-md">Baik</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-error"></div>
+            <span class="text-body-md">Kurang Disarankan</span>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-2xl shadow-[0_30px_60px_-15px_rgba(54,33,21,0.04)] border border-outline-variant/50 overflow-hidden">
+          <div class="calendar-scroll">
+          <div class="calendar-grid border-b border-outline-variant/30 bg-surface-container-low">
+            <div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Minggu</div>
+            <div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Senin</div>
+            <div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Selasa</div>
+            <div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Rabu</div>
+            <div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Kamis</div>
+            <div class="p-4 text-center font-label-md text-label-md text-primary uppercase border-r border-outline-variant/30">Jumat</div>
+            <div class="p-4 text-center font-label-md text-label-md text-primary uppercase">Sabtu</div>
+          </div>
+          <div id="calendarBody" class="calendar-grid bg-white"></div>
+          </div>
+          <p class="calendar-hint">Geser kalender ke samping untuk melihat Jumat &amp; Sabtu &rarr;</p>
+        </div>
+      </div>
+      <aside class="w-full lg:w-96 flex-shrink-0">
+        <div id="detailTanggal" class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 shadow-sm xl:sticky xl:top-28">
+          <h3 class="font-headline-md text-headline-md text-primary mb-3">Detail Tanggal</h3>
+          <p class="text-on-surface-variant font-body-md">Klik salah satu tanggal pada kalender untuk melihat detail weton, neptu, hasil, dan artinya.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- SLOT IKLAN 5 — SETELAH KALENDER -->
+<div class="ad-slot no-print" aria-label="Iklan">
+  <div class="ad-slot-box">Slot Iklan</div>
 </div>
-<div class="flex gap-8 flex-wrap justify-center">
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Filosofi Weton</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Kalender Jawa</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Hubungi Kami</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Kebijakan Privasi</a>
+<!-- ================= Weton Saya ================= -->
+<section id="weton-saya" class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5">
+        <p class="text-[11px] uppercase tracking-[0.35em] text-[#735c00] font-bold mb-4">Hitung Weton Pribadi</p>
+        <h2 class="font-jawi text-5xl md:text-6xl text-[#362115] leading-tight mb-5">Kenali Weton Lair Panjenengan</h2>
+        <p class="text-[#4f453f] text-lg leading-relaxed mb-8">Masukkan tanggal lahir untuk mengetahui hari, pasaran, neptu, arti weton, serta gambaran Pohon Kehidupan Weton.</p>
+        <div class="bg-white rounded-2xl border border-[#d3c3bc]/60 p-6 md:p-8 shadow-sm">
+          <form id="wsFormWeton" class="space-y-8">
+            <div>
+              <label class="text-[11px] uppercase tracking-widest text-[#4f453f] font-bold">Nama</label>
+              <input id="wsNama" class="input-line font-jawi text-2xl" type="text" placeholder="Contoh: Raden Mas">
+            </div>
+            <div>
+              <label class="text-[11px] uppercase tracking-widest text-[#4f453f] font-bold">Tanggal Lahir</label>
+              <input id="wsTanggal" class="input-line font-jawi text-2xl" type="date">
+            </div>
+            <button class="w-full bg-[#362115] text-white py-4 rounded-xl uppercase tracking-widest text-sm font-bold hover:bg-[#735c00] transition" type="submit">Hitung Weton Saya</button>
+          </form>
+        </div>
+        <p class="text-sm text-[#4f453f] italic mt-6">Perhitungan ini menggunakan salah satu pendekatan Primbon Jawa yang umum dipakai masyarakat.</p>
+      </div>
+      <div class="lg:col-span-7">
+        <div id="wsHasilKosong" class="bg-[#fff1eb] rounded-2xl border border-[#d3c3bc]/60 p-8 md:p-12 text-center">
+          <span class="material-symbols-outlined text-[#735c00] text-6xl mb-4">spa</span>
+          <h3 class="font-jawi text-4xl text-[#362115] mb-3">Hasil Weton Akan Muncul Di Sini</h3>
+          <p class="text-[#4f453f]">Isi nama dan tanggal lahir, lalu klik tombol hitung.</p>
+        </div>
+        <div id="wsHasil" class="hidden space-y-8"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLOT IKLAN 6 — SETELAH WETON SAYA -->
+<div class="ad-slot no-print" aria-label="Iklan">
+  <div class="ad-slot-box">Slot Iklan</div>
 </div>
-<div class="flex gap-4">
-<div class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:border-secondary hover:text-secondary transition-all cursor-pointer">
-<span class="material-symbols-outlined text-[20px]">share</span>
+
+<!-- ================= Tentang Budaya ================= -->
+<section id="tentang-budaya" class="relative border-t border-outline-variant/40">
+  <div class="fixed inset-0 batik-overlay-article pointer-events-none"></div>
+  <div class="relative min-h-[520px] md:h-[600px] flex items-center justify-center overflow-hidden px-container-padding-mobile">
+    <div class="absolute inset-0 z-0">
+      <img alt="Filosofi Weton" class="w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5oD7g5QBM5tXeLkXgtmLiSii3chkp7599tZ7GnZh0vJKIXqWS2LzkEmKjinJKw6Vj2LlhT4ddKhIC--LALOO_pJwQ5FFDJZtqf1oXRQDfsQuX4aq-kb20pssQK1d5PumJ3C8E9smEKu7JBKAUPGWXef-UmVd-40YjvDKL1vWZQNjdZqWemV25TDFYYZiXKe913wQETBkUw4R6_3Ys3JvCR4CKTjC1LOsS4xMkJ8u9Zi9AsUZUpj9xqmc5tjFIVCIuLta5BlGSXRQ">
+      <div class="absolute inset-0 bg-gradient-to-b from-surface/20 to-surface"></div>
+    </div>
+    <div class="relative z-10 text-center max-w-3xl">
+      <span class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em] mb-4 block">Edukasi Budaya</span>
+      <h2 class="font-headline-xl text-headline-xl md:text-[64px] text-primary mb-6 leading-tight">Filosofi &amp; Rahasia Alam Weton Jawi</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+        Menelusuri jejak leluhur melalui sistem penanggalan kosmologis Jawi yang menyelaraskan jiwa manusia dengan ritme alam semesta.
+      </p>
+    </div>
+  </div>
+  <div class="max-w-5xl mx-auto px-container-padding-mobile md:px-container-padding-desktop py-16 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24 items-center">
+      <div class="md:col-span-7">
+        <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Asal-Usul &amp; Esensi</h2>
+        <p class="text-on-surface-variant mb-6 leading-relaxed">
+          Weton bukan sekadar hari kelahiran. Kata 'Weton' berasal dari bahasa Jawa 'metu' yang berarti keluar atau lahir. Ini adalah gabungan dari tujuh hari dalam seminggu (Senen-Minggu) dengan lima hari pasaran Jawa (Legi, Pahing, Pon, Wage, Kliwon).
+        </p>
+        <p class="text-on-surface-variant leading-relaxed">
+          Bagi masyarakat Jawa, Weton adalah 'peta navigasi' hidup. Ia dipercaya membawa energi kosmik tertentu yang membentuk karakter, nasib, hingga kecocokan spiritual seseorang dengan orang lain.
+        </p>
+      </div>
+      <div class="md:col-span-5 aspect-square glass-card rounded-xl p-8 flex items-center justify-center border-secondary/20 shadow-sm relative">
+        <div class="absolute -top-4 -right-4 w-12 h-12 bg-secondary text-on-secondary rounded-full flex items-center justify-center font-headline-md">ꦮ</div>
+        <svg viewBox="0 0 400 400" role="img" aria-label="Ilustrasi Naskah Jawa" class="w-full h-full rounded-lg shadow-inner" style="filter:sepia(.28) contrast(.97)">
+          <defs>
+            <linearGradient id="naskahPaper" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f5e7cf"/>
+              <stop offset=".5" stop-color="#ecd8b4"/>
+              <stop offset="1" stop-color="#dcc095"/>
+            </linearGradient>
+            <radialGradient id="naskahVignette" cx=".5" cy=".5" r=".72">
+              <stop offset=".55" stop-color="#3a2413" stop-opacity="0"/>
+              <stop offset="1" stop-color="#3a2413" stop-opacity=".45"/>
+            </radialGradient>
+            <pattern id="naskahScript" width="62" height="36" patternUnits="userSpaceOnUse">
+              <path d="M3 22 q6 -10 12 -2 t12 -2 t12 -2 t12 -2 t9 -1" fill="none" stroke="#5a3d1e" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+              <path d="M8 10 q4 -5 9 -1" fill="none" stroke="#5a3d1e" stroke-width="1.2" stroke-linecap="round" opacity=".32"/>
+              <circle cx="52" cy="11" r="1.5" fill="#5a3d1e" opacity=".3"/>
+            </pattern>
+          </defs>
+          <rect width="400" height="400" fill="url(#naskahPaper)"/>
+          <rect x="18" y="18" width="364" height="364" fill="none" stroke="#8a6a3a" stroke-width="2.5" stroke-opacity=".5"/>
+          <rect x="27" y="27" width="346" height="346" fill="none" stroke="#8a6a3a" stroke-width="1" stroke-opacity=".35"/>
+          <circle cx="36" cy="36" r="6" fill="none" stroke="#735c00" stroke-width="1.4" opacity=".6"/>
+          <circle cx="364" cy="36" r="6" fill="none" stroke="#735c00" stroke-width="1.4" opacity=".6"/>
+          <rect x="46" y="62" width="308" height="216" fill="url(#naskahScript)" opacity=".95"/>
+          <path d="M52 296 h150" stroke="#8a6a3a" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+          <g opacity=".85">
+            <circle cx="322" cy="318" r="34" fill="#7a1f1f"/>
+            <circle cx="322" cy="318" r="34" fill="none" stroke="#5a1414" stroke-width="2"/>
+            <circle cx="322" cy="318" r="26" fill="none" stroke="#e8cfa6" stroke-width="1.2" opacity=".7"/>
+            <text x="322" y="331" text-anchor="middle" font-size="30" fill="#e8cfa6" font-family="serif">ꦮ</text>
+          </g>
+          <text x="46" y="345" font-family="'Plus Jakarta Sans',sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#5a3d1e" opacity=".75">NASKAH JAWA</text>
+          <rect width="400" height="400" fill="url(#naskahVignette)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="divider-elegant"><span class="aksara-dot"></span></div>
+    <div class="py-12">
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Memahami Makna Neptu</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-card p-8 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all">
+          <span class="material-symbols-outlined text-secondary mb-4" style="font-size: 32px;">calculate</span>
+          <h3 class="font-headline-md text-headline-md text-primary mb-4">Nilai Numerik</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Setiap hari dan pasaran memiliki nilai angka (Neptu) yang jika dijumlahkan menjadi identitas spiritual seseorang.</p>
+        </div>
+        <div class="md:col-span-2 glass-card p-8 rounded-xl bg-primary text-on-primary border-none overflow-hidden relative group">
+          <div class="relative z-10">
+            <h3 class="font-headline-md text-headline-md mb-4">Energi Kosmik</h3>
+            <p class="opacity-80 leading-relaxed mb-4">Neptu bukan sekadar angka, melainkan representasi dari besarnya energi yang dibawa seseorang saat pertama kali menghirup udara di dunia ini.</p>
+            <div class="flex gap-4">
+              <span class="px-4 py-1 rounded-full border border-on-primary/30 text-xs uppercase tracking-widest">Saka</span>
+              <span class="px-4 py-1 rounded-full border border-on-primary/30 text-xs uppercase tracking-widest">Wuku</span>
+            </div>
+          </div>
+          <span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[200px] opacity-10 group-hover:scale-110 transition-transform duration-1000">auto_awesome</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLOT IKLAN 7 — AREA TENGAH ARTIKEL -->
+    <div class="ad-slot no-print" aria-label="Iklan">
+      <div class="ad-slot-box">Slot Iklan</div>
+    </div>
+    <div class="py-24" id="kecocokan">
+      <div class="text-center mb-16">
+        <h2 class="font-headline-lg text-headline-lg text-primary mb-4">8 Kategori Kecocokan Primbon</h2>
+        <p class="text-on-surface-variant">Dalam tradisi perjodohan, hasil penjumlahan Neptu kedua pasangan dibagi 8 untuk menentukan arah hubungan.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+          <div class="flex justify-between items-start mb-6">
+            <span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 1</span>
+            <span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">link_off</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-primary mb-2">Pegat</h4>
+          <p class="text-sm text-on-surface-variant mb-4">Kemungkinan sering menghadapi masalah di kemudian hari, dari ekonomi hingga perselisihan.</p>
+          <span class="text-[10px] uppercase tracking-widest text-outline">Saran: Kesabaran ekstra</span>
+        </div>
+        <div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+          <div class="flex justify-between items-start mb-6">
+            <span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 2</span>
+            <span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">workspace_premium</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-primary mb-2">Ratu</h4>
+          <p class="text-sm text-on-surface-variant mb-4">Pasangan yang disegani dan dihormati oleh lingkungan sekitar. Hubungan yang harmonis.</p>
+          <span class="text-[10px] uppercase tracking-widest text-outline">Saran: Jaga martabat</span>
+        </div>
+        <div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300 ring-1 ring-secondary/20">
+          <div class="flex justify-between items-start mb-6">
+            <span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 3</span>
+            <span class="material-symbols-outlined text-secondary">favorite</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-primary mb-2">Jodoh</h4>
+          <p class="text-sm text-on-surface-variant mb-4">Saling melengkapi, menerima kekurangan, dan rejeki yang mengalir dengan lancar.</p>
+          <span class="text-[10px] uppercase tracking-widest text-secondary font-bold">Ideal &amp; Harmonis</span>
+        </div>
+        <div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+          <div class="flex justify-between items-start mb-6">
+            <span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 4</span>
+            <span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">self_improvement</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-primary mb-2">Topo</h4>
+          <p class="text-sm text-on-surface-variant mb-4">Awal hubungan mungkin berat, namun akan berakhir bahagia seiring berjalannya waktu.</p>
+          <span class="text-[10px] uppercase tracking-widest text-outline">Saran: Tekun berjuang</span>
+        </div>
+        <div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+          <div class="flex justify-between items-start mb-6">
+            <span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 5</span>
+            <span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">payments</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-primary mb-2">Tinari</h4>
+          <p class="text-sm text-on-surface-variant mb-4">Keberuntungan finansial yang tinggi. Rejeki akan sering datang dari arah yang tak terduga.</p>
+          <span class="text-[10px] uppercase tracking-widest text-outline">Saran: Tetap dermawan</span>
+        </div>
+        <div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+          <div class="flex justify-between items-start mb-6">
+            <span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 6</span>
+            <span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">forum</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-primary mb-2">Padu</h4>
+          <p class="text-sm text-on-surface-variant mb-4">Sering terjadi pertengkaran mulut namun tidak sampai berujung pada perpisahan.</p>
+          <span class="text-[10px] uppercase tracking-widest text-outline">Saran: Kontrol emosi</span>
+        </div>
+        <div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300">
+          <div class="flex justify-between items-start mb-6">
+            <span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 7</span>
+            <span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">visibility</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-primary mb-2">Sujanan</h4>
+          <p class="text-sm text-on-surface-variant mb-4">Kemungkinan besar akan menghadapi isu perselingkuhan atau gangguan dari pihak ketiga.</p>
+          <span class="text-[10px] uppercase tracking-widest text-outline">Saran: Bangun kepercayaan</span>
+        </div>
+        <div class="group bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300 ring-2 ring-secondary">
+          <div class="flex justify-between items-start mb-6">
+            <span class="font-label-md text-label-md text-secondary border-b border-secondary">Kategori 8</span>
+            <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">all_inclusive</span>
+          </div>
+          <h4 class="font-headline-md text-headline-md text-primary mb-2">Pesthi</h4>
+          <p class="text-sm text-on-surface-variant mb-4">Hubungan yang tenang, damai, dan langgeng hingga tua tanpa ada hambatan yang berarti.</p>
+          <span class="text-[10px] uppercase tracking-widest text-secondary font-bold">Kebahagiaan Sejati</span>
+        </div>
+      </div>
+    </div>
+    <div class="divider-elegant"><span class="aksara-dot"></span></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 py-12">
+      <div>
+        <h2 class="font-headline-lg text-headline-lg text-primary mb-8">Etika Memahami Primbon</h2>
+        <ul class="space-y-6">
+          <li class="flex items-start">
+            <span class="diamond-bullet mt-1"></span>
+            <p class="text-on-surface-variant">Primbon adalah referensi kebijaksanaan, bukan kebenaran mutlak. Gunakan sebagai alat mawas diri.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="diamond-bullet mt-1"></span>
+            <p class="text-on-surface-variant">Karakter buruk yang diprediksi weton dapat diubah melalui laku prihatin (disiplin spiritual).</p>
+          </li>
+          <li class="flex items-start">
+            <span class="diamond-bullet mt-1"></span>
+            <p class="text-on-surface-variant">Menghormati weton berarti menghormati waktu lahir yang telah ditentukan oleh Sang Pencipta.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+          <img alt="Budaya Jawa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJqpFd2rfW8FZdhy93-Yc2r0gstjio4dkL-qGHucfXoJpkES6vPZSeoP5uddF1X0ONtYdBzbjB6_ylit4UdA8o0EZrxy7vtPFY_H8kpBFIWmgZhHPTcst2KDv7J9nxNo_72DRvQD4AaEi-Kijc-8wSTeyr0E9qlZAFzgwRvceEr6zzvNiXThW9bsrnLDuOMKvFvSD2HHH3dOdKdpNuFK-XsSxtd5-_VHCADQfCSR5v8EiaAdCvZ89rowSUd7Rs0s1zUu8hMFzSNs">
+        </div>
+        <div class="absolute -bottom-8 -left-8 glass-card p-6 rounded-lg max-w-[240px]">
+          <p class="font-headline-md text-headline-md text-primary italic">"Sapa kang mawas dhiri bakal ngerti jati dhiri."</p>
+          <p class="text-[10px] uppercase tracking-wider text-secondary mt-2">— Pepatah Jawa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLOT IKLAN 8 — SEBELUM CTA PENUTUP -->
+<div class="ad-slot no-print" aria-label="Iklan">
+  <div class="ad-slot-box">Slot Iklan</div>
 </div>
-<div class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:border-secondary hover:text-secondary transition-all cursor-pointer">
-<span class="material-symbols-outlined text-[20px]">language</span>
+
+<section class="bg-surface-container py-24 text-center">
+  <div class="max-w-2xl mx-auto px-container-padding-mobile">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Cari Tahu Weton Anda Sekarang</h2>
+    <p class="text-on-surface-variant mb-10">Temukan perhitungan akurat weton Anda beserta penjelasan mendalam tentang karakter dan potensi rejeki.</p>
+    <a href="#weton-saya" class="inline-block bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:bg-secondary transition-all shadow-lg">
+      Hitung Weton Saya
+    </a>
+  </div>
+</section>
+
+<!-- SLOT IKLAN 9 — BANNER ATAS FOOTER (banner bawah) -->
+<div class="ad-slot ad-slot-wide no-print" aria-label="Iklan">
+  <div class="ad-slot-box">Slot Iklan</div>
 </div>
-</div>
-</div>
+
+<footer class="bg-surface-container-low border-t border-outline-variant/50">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-card-gap w-full px-container-padding-mobile md:px-container-padding-desktop py-12 max-w-7xl mx-auto">
+    <div class="flex flex-col items-center md:items-start">
+      <div class="font-headline-md text-headline-md text-primary mb-2">Weton Jawi</div>
+      <p class="text-on-surface-variant font-label-md text-label-md">© 2024 Tradisi Jawi. Rahayu Sagung Dumadi.</p>
+    </div>
+    <div class="flex gap-8 flex-wrap justify-center">
+      <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#tentang-budaya">Filosofi Weton</a>
+      <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#tanggal-baik">Kalender Jawa</a>
+      <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#weton-saya">Weton Saya</a>
+      <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#kalkulator">Kalkulator Weton</a>
+    </div>
+    <div class="flex gap-4">
+      <div class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:border-secondary hover:text-secondary transition-all cursor-pointer">
+        <span class="material-symbols-outlined text-[20px]">share</span>
+      </div>
+      <div class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:border-secondary hover:text-secondary transition-all cursor-pointer">
+        <span class="material-symbols-outlined text-[20px]">language</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLOT IKLAN 10 — FOOTER BAWAH (banner bawah) -->
+  <div class="ad-slot ad-slot-wide no-print pb-8" aria-label="Iklan">
+    <div class="ad-slot-box">Slot Iklan</div>
+  </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const hariNeptu = {
-    Minggu: 5,
-    Senin: 4,
-    Selasa: 3,
-    Rabu: 7,
-    Kamis: 8,
-    Jumat: 6,
-    Sabtu: 9
-  };
-
-  const pasaranNeptu = {
-    Legi: 5,
-    Pahing: 9,
-    Pon: 7,
-    Wage: 4,
-    Kliwon: 8
-  };
-
-  const hariList = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-  const pasaranList = ["Legi", "Pahing", "Pon", "Wage", "Kliwon"];
-
-  const hasilSisa5 = {
-    1: "Sri",
-    2: "Lungguh",
-    3: "Gedhong",
-    4: "Lara",
-    0: "Pati"
-  };
-
-  const artiTanggal = {
+(function () {
+  var hariNeptu = { Minggu: 5, Senin: 4, Selasa: 3, Rabu: 7, Kamis: 8, Jumat: 6, Sabtu: 9 };
+  var pasaranNeptu = { Legi: 5, Pahing: 9, Pon: 7, Wage: 4, Kliwon: 8 };
+  var hariList = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+  var pasaranList = ["Legi", "Pahing", "Pon", "Wage", "Kliwon"];
+  var hasilSisa5 = { 1: "Sri", 2: "Lungguh", 3: "Gedhong", 4: "Lara", 0: "Pati" };
+  var artiTanggal = {
     Sri: "Melambangkan rezeki, kemakmuran, dan keberuntungan rumah tangga.",
     Lungguh: "Melambangkan kedudukan baik, kehormatan, dan kehidupan yang stabil.",
     Gedhong: "Melambangkan kecukupan harta, kenyamanan, dan sandang pangan.",
     Lara: "Melambangkan adanya ujian, sehingga perlu pertimbangan dan doa lebih.",
     Pati: "Dalam tradisi Jawa, hasil ini kurang disarankan dan sebaiknya dipertimbangkan kembali."
   };
-
-  const maknaPendek = {
-    Sri: "Rezeki & Kemakmuran",
-    Lungguh: "Kedudukan & Kehormatan",
-    Gedhong: "Kecukupan & Kenyamanan",
-    Lara: "Ujian & Kewaspadaan",
-    Pati: "Pertimbangan & Doa"
+  var maknaPendek = {
+    Sri: "Rezeki & Kemakmuran", Lungguh: "Kedudukan & Kehormatan", Gedhong: "Kecukupan & Kenyamanan",
+    Lara: "Ujian & Kewaspadaan", Pati: "Pertimbangan & Doa"
   };
 
-  function downloadSeratFoto() {
-  const element = document.getElementById("cert-container");
-
-  if (!element) {
-    alert("Serat belum dibuat.");
-    return;
-  }
-
-  const oldTransform = element.style.transform;
-  element.style.transform = "none";
-
-  html2canvas(element, {
-  scale: 3,
-  useCORS: true,
-  backgroundColor: "#fcf9f2"
-})
-.then(canvas => {
-    const link = document.createElement("a");
-    link.download = "serat-undangan.png";
-    link.href = canvas.toDataURL("image/png");
-    link.click();
-
-    element.style.transform = oldTransform;
-  });
-}
+  window.downloadSeratFoto = function () {
+    var element = document.getElementById("cert-container");
+    if (!element) { alert("Serat belum dibuat."); return; }
+    var oldTransform = element.style.transform;
+    element.style.transform = "none";
+    html2canvas(element, { scale: 3, useCORS: true, backgroundColor: "#fcf9f2" }).then(function (canvas) {
+      var link = document.createElement("a");
+      link.download = "serat-undangan.png";
+      link.href = canvas.toDataURL("image/png");
+      link.click();
+      element.style.transform = oldTransform;
+    });
+  };
 
   function escapeHTML(text) {
     return String(text)
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
+      .replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;").replaceAll("'", "&#039;");
   }
 
   function getWeton(dateValue) {
-    const date = new Date(dateValue + "T00:00:00");
-    const hari = hariList[date.getDay()];
-
-    // Acuan sistem web ini:
-    // 23 April 2008 = Rabu Legi
-    const anchor = new Date("2008-04-23T00:00:00");
-    const selisihHari = Math.floor((date - anchor) / (1000 * 60 * 60 * 24));
-    const indexPasaran = ((selisihHari % 5) + 5) % 5;
-    const pasaran = pasaranList[indexPasaran];
-
-    const neptuHari = hariNeptu[hari];
-    const neptuPasaran = pasaranNeptu[pasaran];
-
-    return {
-      hari,
-      pasaran,
-      weton: `${hari} ${pasaran}`,
-      neptuHari,
-      neptuPasaran,
-      total: neptuHari + neptuPasaran
-    };
+    var date = new Date(dateValue + "T00:00:00");
+    var hari = hariList[date.getDay()];
+    var anchor = new Date("2008-04-23T00:00:00");
+    var selisihHari = Math.floor((date - anchor) / (1000 * 60 * 60 * 24));
+    var indexPasaran = ((selisihHari % 5) + 5) % 5;
+    var pasaran = pasaranList[indexPasaran];
+    var neptuHari = hariNeptu[hari];
+    var neptuPasaran = pasaranNeptu[pasaran];
+    return { hari: hari, pasaran: pasaran, weton: hari + " " + pasaran, neptuHari: neptuHari, neptuPasaran: neptuPasaran, total: neptuHari + neptuPasaran };
   }
 
   function getSisa(total) {
-    const sisa = total % 5;
-    return {
-      sisa,
-      nama: hasilSisa5[sisa]
-    };
+    var sisa = total % 5;
+    return { sisa: sisa, nama: hasilSisa5[sisa] };
   }
 
   function warnaTanggal(hasil) {
@@ -1039,54 +1001,35 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function formatTanggal(date) {
-    return date.toLocaleDateString("id-ID", {
-      day: "numeric",
-      month: "long",
-      year: "numeric"
-    });
+    return date.toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" });
   }
 
   function namaBulan(index) {
-    return [
-      "Januari", "Februari", "Maret", "April", "Mei", "Juni",
-      "Juli", "Agustus", "September", "Oktober", "November", "Desember"
-    ][index];
+    return ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"][index];
   }
 
   function setupTilt() {
-    const certificate = document.getElementById("cert-container");
+    var certificate = document.getElementById("cert-container");
     if (!certificate) return;
-
-    certificate.addEventListener("mousemove", (e) => {
-      const rect = certificate.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-
-      const rotateX = (y - centerY) / 80;
-      const rotateY = (centerX - x) / 80;
-
-      certificate.style.transform = `perspective(2000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    certificate.addEventListener("mousemove", function (e) {
+      var rect = certificate.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+      var rotateX = (y - rect.height / 2) / 80;
+      var rotateY = (rect.width / 2 - x) / 80;
+      certificate.style.transform = "perspective(2000px) rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg)";
     });
-
-    certificate.addEventListener("mouseleave", () => {
+    certificate.addEventListener("mouseleave", function () {
       certificate.style.transform = "perspective(2000px) rotateX(0deg) rotateY(0deg)";
       certificate.style.transition = "transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)";
     });
-
-    certificate.addEventListener("mouseenter", () => {
-      certificate.style.transition = "none";
-    });
+    certificate.addEventListener("mouseenter", function () { certificate.style.transition = "none"; });
   }
-
   function renderUndangan(data, selectedIndex) {
-    const pilihan = data.rekomendasi[selectedIndex];
-    const hasilNama = pilihan.hasilTanggal.nama;
-    const tanggalAkad = formatTanggal(pilihan.date);
-
-    const undanganPreview = document.getElementById("undanganPreview");
+    var pilihan = data.rekomendasi[selectedIndex];
+    var hasilNama = pilihan.hasilTanggal.nama;
+    var tanggalAkad = formatTanggal(pilihan.date);
+    var undanganPreview = document.getElementById("undanganPreview");
     undanganPreview.classList.remove("hidden");
 
     undanganPreview.innerHTML = `
@@ -1147,8 +1090,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
 
           <div class="mb-6 flex flex-col items-center w-full">
-           <div class="relative flex flex-col items-center justify-center p-6 mb-4 w-full">
-              
+            <div class="relative flex flex-col items-center justify-center p-6 mb-4 w-full">
               <span class="data-label text-[11px] text-secondary mb-4 font-bold">Weton Akad Pinilih</span>
               <span class="font-headline-xl text-5xl md:text-6xl text-primary tracking-tight leading-none text-center relative -top-2">${hasilNama}</span>
               <div class="mt-8 max-w-md">
@@ -1159,7 +1101,6 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
             </div>
           </div>
-
           <div class="w-full max-w-sm border-t border-b border-secondary/10 py-8 mb-12">
             <p class="data-label text-[10px] text-secondary mb-2 font-bold">Dinten Ingkang Pinilih</p>
             <p class="font-headline-md text-2xl text-primary tracking-wide">${tanggalAkad}</p>
@@ -1169,21 +1110,22 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
 
           <div class="opacity-40">
-           <p class="text-sm text-on-surface-variant italic">
-  Perhitungan ini menggunakan salah satu pendekatan Primbon Jawa yang umum dipakai masyarakat.
-</p>
+            <p class="text-sm text-on-surface-variant italic">
+              Perhitungan ini menggunakan salah satu pendekatan Primbon Jawa yang umum dipakai masyarakat.
+            </p>
           </div>
         </div>
       </div>
 
       <div class="mt-10 flex flex-wrap justify-center gap-6 no-print">
-<button id="btnKembaliHasil" class="flex items-center gap-3 border border-outline text-on-surface-variant px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:bg-surface-variant/50 transition-all">
+        <button id="btnKembaliHasil" class="flex items-center gap-3 border border-outline text-on-surface-variant px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:bg-surface-variant/50 transition-all">
           <span class="material-symbols-outlined text-xl">arrow_upward</span>
           Kembali ke Hasil
         </button>
       </div>
     `;
-document.getElementById("btnKembaliHasil").addEventListener("click", () => {
+
+    document.getElementById("btnKembaliHasil").addEventListener("click", function () {
       document.getElementById("hasilWeton").scrollIntoView({ behavior: "smooth" });
     });
 
@@ -1191,50 +1133,42 @@ document.getElementById("btnKembaliHasil").addEventListener("click", () => {
     undanganPreview.scrollIntoView({ behavior: "smooth" });
   }
 
-  document.querySelector("#kalkulator form").addEventListener("submit", function(e) {
+  document.querySelector("#kalkulator form").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const namaPria = document.getElementById("namaPria").value || "Calon Pria";
-    const namaWanita = document.getElementById("namaWanita").value || "Calon Wanita";
-    const tglPria = document.getElementById("tglPria").value;
-    const tglWanita = document.getElementById("tglWanita").value;
-    const bulan = parseInt(document.getElementById("bulanNikah").value);
-    const tahun = parseInt(document.getElementById("tahunNikah").value);
+    var namaPria = document.getElementById("namaPria").value || "Calon Pria";
+    var namaWanita = document.getElementById("namaWanita").value || "Calon Wanita";
+    var tglPria = document.getElementById("tglPria").value;
+    var tglWanita = document.getElementById("tglWanita").value;
+    var bulan = parseInt(document.getElementById("bulanNikah").value);
+    var tahun = parseInt(document.getElementById("tahunNikah").value);
 
     if (!tglPria || !tglWanita || !tahun) {
       alert("Lengkapi tanggal lahir pasangan, bulan, dan tahun akad dulu.");
       return;
     }
 
-    const wetonPria = getWeton(tglPria);
-    const wetonWanita = getWeton(tglWanita);
+    var wetonPria = getWeton(tglPria);
+    var wetonWanita = getWeton(tglWanita);
+    var totalPasangan = wetonPria.total + wetonWanita.total;
+    var hasilPasangan = getSisa(totalPasangan);
+    var jumlahHari = new Date(tahun, bulan + 1, 0).getDate();
+    var rekomendasiHTML = "";
+    var rekomendasi = [];
 
-    const totalPasangan = wetonPria.total + wetonWanita.total;
-    const hasilPasangan = getSisa(totalPasangan);
-
-    const jumlahHari = new Date(tahun, bulan + 1, 0).getDate();
-    let rekomendasiHTML = "";
-    const rekomendasi = [];
-
-    for (let tanggal = 1; tanggal <= jumlahHari; tanggal++) {
-      const iso = `${tahun}-${String(bulan + 1).padStart(2, "0")}-${String(tanggal).padStart(2, "0")}`;
-      const date = new Date(tahun, bulan, tanggal);
-
-      const wetonTanggal = getWeton(iso);
-      const hasilTanggal = getSisa(wetonTanggal.total);
+    for (var tanggal = 1; tanggal <= jumlahHari; tanggal++) {
+      var iso = tahun + "-" + String(bulan + 1).padStart(2, "0") + "-" + String(tanggal).padStart(2, "0");
+      var date = new Date(tahun, bulan, tanggal);
+      var wetonTanggal = getWeton(iso);
+      var hasilTanggal = getSisa(wetonTanggal.total);
 
       if (hasilTanggal.sisa === hasilPasangan.sisa) {
-        const index = rekomendasi.length;
-        rekomendasi.push({
-          iso,
-          date,
-          wetonTanggal,
-          hasilTanggal
-        });
+        var idx = rekomendasi.length;
+        rekomendasi.push({ iso: iso, date: date, wetonTanggal: wetonTanggal, hasilTanggal: hasilTanggal });
 
         rekomendasiHTML += `
           <label class="block cursor-pointer">
-            <input type="radio" name="tanggalAkadPilihan" value="${index}" class="peer sr-only">
+            <input type="radio" name="tanggalAkadPilihan" value="${idx}" class="peer sr-only">
             <div class="p-5 border-l-4 ${warnaTanggal(hasilTanggal.nama)} shadow-sm bg-white peer-checked:ring-4 peer-checked:ring-secondary/40 peer-checked:scale-[1.01] transition">
               <h4 class="font-headline-md text-xl mb-1">${formatTanggal(date)}</h4>
               <p class="text-sm mb-2">${wetonTanggal.weton} • Neptu ${wetonTanggal.total}</p>
@@ -1249,24 +1183,18 @@ document.getElementById("btnKembaliHasil").addEventListener("click", () => {
     }
 
     if (!rekomendasiHTML) {
-      rekomendasiHTML = `
-        <div class="p-6 bg-red-100 border-l-4 border-red-500 text-red-900 md:col-span-2">
-          Tidak ada tanggal yang memiliki sisa pembagian sama pada bulan ini.
-        </div>
-      `;
+      rekomendasiHTML = '<div class="p-6 bg-red-100 border-l-4 border-red-500 text-red-900 md:col-span-2">Tidak ada tanggal yang memiliki sisa pembagian sama pada bulan ini.</div>';
     }
 
-    const optionHTML = rekomendasi.map((item, index) => {
-      return `<option value="${index}">${formatTanggal(item.date)} — ${item.wetonTanggal.weton} — ${item.hasilTanggal.nama}</option>`;
+    var optionHTML = rekomendasi.map(function (item, index) {
+      return '<option value="' + index + '">' + formatTanggal(item.date) + " — " + item.wetonTanggal.weton + " — " + item.hasilTanggal.nama + "</option>";
     }).join("");
-
-    const hasilBox = document.getElementById("hasilWeton");
+    var hasilBox = document.getElementById("hasilWeton");
     hasilBox.classList.remove("hidden");
 
     hasilBox.innerHTML = `
       <div class="bg-surface-container-low p-8 border border-outline-variant/40 mb-10">
         <h3 class="font-headline-lg text-3xl text-primary mb-6">Hasil Weton Pasangan</h3>
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div class="bg-white p-6 border border-outline-variant/30">
             <p class="text-sm uppercase tracking-widest text-on-surface-variant mb-1">${escapeHTML(namaPria)}</p>
@@ -1275,7 +1203,6 @@ document.getElementById("btnKembaliHasil").addEventListener("click", () => {
             <p>Neptu pasaran: ${wetonPria.neptuPasaran}</p>
             <p class="font-bold">Total: ${wetonPria.total}</p>
           </div>
-
           <div class="bg-white p-6 border border-outline-variant/30">
             <p class="text-sm uppercase tracking-widest text-on-surface-variant mb-1">${escapeHTML(namaWanita)}</p>
             <h4 class="font-headline-md text-2xl text-primary">${wetonWanita.weton}</h4>
@@ -1284,15 +1211,10 @@ document.getElementById("btnKembaliHasil").addEventListener("click", () => {
             <p class="font-bold">Total: ${wetonWanita.total}</p>
           </div>
         </div>
-
         <div class="bg-primary text-white p-6">
           <p class="uppercase tracking-widest text-sm opacity-80">Total Neptu Pasangan</p>
-          <h4 class="font-headline-lg text-4xl my-2">
-            ${wetonPria.total} + ${wetonWanita.total} = ${totalPasangan}
-          </h4>
-          <p class="text-lg">
-            ${totalPasangan} ÷ 5 = sisa ${hasilPasangan.sisa} → <b>${hasilPasangan.nama}</b>
-          </p>
+          <h4 class="font-headline-lg text-4xl my-2">${wetonPria.total} + ${wetonWanita.total} = ${totalPasangan}</h4>
+          <p class="text-lg">${totalPasangan} &divide; 5 = sisa ${hasilPasangan.sisa} &rarr; <b>${hasilPasangan.nama}</b></p>
           <p class="mt-2">${artiTanggal[hasilPasangan.nama]}</p>
         </div>
       </div>
@@ -1304,36 +1226,26 @@ document.getElementById("btnKembaliHasil").addEventListener("click", () => {
           sisa pembagian neptunya sama dengan sisa pasangan, yaitu sisa
           <b>${hasilPasangan.sisa}</b> atau <b>${hasilPasangan.nama}</b>.
         </p>
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           ${rekomendasiHTML}
         </div>
-
         <div class="bg-white border border-outline-variant/40 p-6 md:p-8 shadow-sm">
           <h3 class="font-headline-md text-2xl text-primary mb-3">Jadikan Undangan</h3>
-          <p class="text-on-surface-variant mb-6">
-            Pilih salah satu tanggal rekomendasi dulu, lalu buat tampilan serat undangan.
-          </p>
-
+          <p class="text-on-surface-variant mb-6">Pilih salah satu tanggal rekomendasi dulu, lalu buat tampilan serat undangan.</p>
           <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 items-end">
             <div>
-              <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1 block">
-                Tanggal Akad Pilihan
-              </label>
+              <label class="font-label-md text-[11px] text-on-surface-variant uppercase mb-1 block">Tanggal Akad Pilihan</label>
               <select id="selectTanggalUndangan" class="bg-transparent input-underline py-3 text-body-lg font-headline-md text-primary w-full" ${rekomendasi.length ? "" : "disabled"}>
                 <option value="">Pilih tanggal akad</option>
                 ${optionHTML}
               </select>
             </div>
-
             <button id="btnJadikanUndangan" class="bg-secondary text-white px-8 py-4 rounded-full font-label-md uppercase tracking-widest hover:bg-primary transition-colors" ${rekomendasi.length ? "" : "disabled"}>
               Jadikan Undangan
             </button>
           </div>
         </div>
-
         <div id="undanganPreview" class="hidden mt-16"></div>
-
         <p class="mt-8 text-sm italic text-on-surface-variant">
           Catatan: Perhitungan ini merupakan bagian dari tradisi budaya Jawa sebagai referensi dan harapan baik.
           Hasil dapat berbeda dengan sumber kalender Jawa lain karena perbedaan acuan.
@@ -1341,67 +1253,302 @@ document.getElementById("btnKembaliHasil").addEventListener("click", () => {
       </div>
     `;
 
-    const data = {
-      namaPria,
-      namaWanita,
-      wetonPria,
-      wetonWanita,
-      rekomendasi
-    };
+    var data = { namaPria: namaPria, namaWanita: namaWanita, wetonPria: wetonPria, wetonWanita: wetonWanita, rekomendasi: rekomendasi };
 
-    document.querySelectorAll("input[name='tanggalAkadPilihan']").forEach((radio) => {
-      radio.addEventListener("change", () => {
+    document.querySelectorAll("input[name='tanggalAkadPilihan']").forEach(function (radio) {
+      radio.addEventListener("change", function () {
         document.getElementById("selectTanggalUndangan").value = radio.value;
       });
     });
 
-    const selectTanggal = document.getElementById("selectTanggalUndangan");
+    var selectTanggal = document.getElementById("selectTanggalUndangan");
     if (selectTanggal) {
-      selectTanggal.addEventListener("change", () => {
-        const radio = document.querySelector(`input[name='tanggalAkadPilihan'][value="${selectTanggal.value}"]`);
+      selectTanggal.addEventListener("change", function () {
+        var radio = document.querySelector("input[name='tanggalAkadPilihan'][value='" + selectTanggal.value + "']");
         if (radio) radio.checked = true;
       });
     }
 
-    const btnJadikan = document.getElementById("btnJadikanUndangan");
+    var btnJadikan = document.getElementById("btnJadikanUndangan");
     if (btnJadikan) {
-      btnJadikan.addEventListener("click", () => {
-        const selectedIndex = document.getElementById("selectTanggalUndangan").value;
-        if (selectedIndex === "") {
-          alert("Pilih dulu tanggal akad yang ingin dijadikan undangan.");
-          return;
-        }
-
+      btnJadikan.addEventListener("click", function () {
+        var selectedIndex = document.getElementById("selectTanggalUndangan").value;
+        if (selectedIndex === "") { alert("Pilih dulu tanggal akad yang ingin dijadikan undangan."); return; }
         renderUndangan(data, Number(selectedIndex));
       });
     }
 
     hasilBox.scrollIntoView({ behavior: "smooth" });
   });
-});
+})();
 </script>
-
-
 <script>
-(function(){
-  const btn = document.getElementById('wjxToggle');
-  const menu = document.getElementById('wjxMobile');
-  if(!btn || !menu) return;
-  btn.addEventListener('click', function(){
-    const open = menu.classList.toggle('is-open');
-    btn.classList.toggle('is-open', open);
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    menu.setAttribute('aria-hidden', open ? 'false' : 'true');
-  });
-  menu.querySelectorAll('a').forEach(function(link){
-    link.addEventListener('click', function(){
-      menu.classList.remove('is-open');
-      btn.classList.remove('is-open');
-      btn.setAttribute('aria-expanded','false');
-      menu.setAttribute('aria-hidden','true');
+(function () {
+  var hariNeptu = { Minggu: 5, Senin: 4, Selasa: 3, Rabu: 7, Kamis: 8, Jumat: 6, Sabtu: 9 };
+  var pasaranNeptu = { Legi: 5, Pahing: 9, Pon: 7, Wage: 4, Kliwon: 8 };
+  var hariList = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+  var pasaranList = ["Legi", "Pahing", "Pon", "Wage", "Kliwon"];
+  var bulanNama = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+  var hasilSisa5 = { 1: "Sri", 2: "Lungguh", 3: "Gedhong", 4: "Lara", 0: "Pati" };
+  var artiTanggal = {
+    Sri: "Melambangkan rezeki, kemakmuran, dan keberuntungan rumah tangga.",
+    Lungguh: "Melambangkan kedudukan baik, kehormatan, dan kehidupan yang stabil.",
+    Gedhong: "Melambangkan kecukupan harta, kenyamanan, dan sandang pangan.",
+    Lara: "Melambangkan adanya ujian, sehingga perlu pertimbangan dan doa lebih.",
+    Pati: "Dalam tradisi Jawa, hasil ini kurang disarankan dan sebaiknya dipertimbangkan kembali."
+  };
+
+  function getWeton(dateValue) {
+    var date = new Date(dateValue + "T00:00:00");
+    var hari = hariList[date.getDay()];
+    var anchor = new Date("2008-04-23T00:00:00");
+    var selisihHari = Math.floor((date - anchor) / (1000 * 60 * 60 * 24));
+    var indexPasaran = ((selisihHari % 5) + 5) % 5;
+    var pasaran = pasaranList[indexPasaran];
+    var neptuHari = hariNeptu[hari];
+    var neptuPasaran = pasaranNeptu[pasaran];
+    return { hari: hari, pasaran: pasaran, weton: hari + " " + pasaran, neptuHari: neptuHari, neptuPasaran: neptuPasaran, total: neptuHari + neptuPasaran };
+  }
+
+  function getHasil(total) {
+    var sisa = total % 5;
+    return { sisa: sisa, nama: hasilSisa5[sisa], arti: artiTanggal[hasilSisa5[sisa]] };
+  }
+
+  function warnaHasil(nama) {
+    if (nama === "Sri") return "bg-emerald-100 text-emerald-800";
+    if (nama === "Lungguh") return "bg-surface-variant text-on-surface-variant";
+    if (nama === "Gedhong") return "bg-emerald-100 text-emerald-800";
+    return "bg-error-container text-on-error-container";
+  }
+
+  function iconHasil(nama) {
+    if (nama === "Sri" || nama === "Gedhong") return '<span class="material-symbols-outlined text-[14px]">stars</span>';
+    return "";
+  }
+
+  function tanggalISO(tahun, bulan, tanggal) {
+    return tahun + "-" + String(bulan + 1).padStart(2, "0") + "-" + String(tanggal).padStart(2, "0");
+  }
+
+  function renderDetail(data) {
+    var detail = document.getElementById("detailTanggal");
+    detail.innerHTML = `
+      <p class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-3">Tanggal Dipilih</p>
+      <h3 class="font-headline-lg text-headline-lg text-primary mb-2">${data.tanggal} ${bulanNama[data.bulan]} ${data.tahun}</h3>
+      <div class="h-[1px] bg-outline-variant/50 my-6"></div>
+      <div class="space-y-4">
+        <div>
+          <p class="text-[11px] uppercase tracking-widest text-on-surface-variant font-bold">Weton</p>
+          <p class="font-headline-md text-headline-md text-primary">${data.weton.weton}</p>
+        </div>
+        <div>
+          <p class="text-[11px] uppercase tracking-widest text-on-surface-variant font-bold">Neptu</p>
+          <p class="text-body-lg text-primary">${data.weton.hari} ${data.weton.neptuHari} + ${data.weton.pasaran} ${data.weton.neptuPasaran} = <b>${data.weton.total}</b></p>
+        </div>
+        <div class="p-5 rounded-xl ${warnaHasil(data.hasil.nama)}">
+          <p class="text-[11px] uppercase tracking-widest font-bold mb-1">Hasil Primbon</p>
+          <p class="font-headline-lg text-headline-lg">${data.hasil.nama}</p>
+          <p class="mt-2 text-sm">${data.hasil.arti}</p>
+        </div>
+      </div>
+    `;
+  }
+  function renderKalender() {
+    var bulan = parseInt(document.getElementById("bulanInput").value);
+    var tahun = parseInt(document.getElementById("tahunInput").value);
+    var calendarBody = document.getElementById("calendarBody");
+    var filterAktif = [];
+    if (document.getElementById("filterSri").checked) filterAktif.push("Sri");
+    if (document.getElementById("filterGedhong").checked) filterAktif.push("Gedhong");
+    if (document.getElementById("filterLungguh").checked) filterAktif.push("Lungguh");
+
+    calendarBody.innerHTML = "";
+    var hariPertama = new Date(tahun, bulan, 1).getDay();
+    var jumlahHari = new Date(tahun, bulan + 1, 0).getDate();
+
+    for (var i = 0; i < hariPertama; i++) {
+      calendarBody.innerHTML += '<div class="min-h-[120px] border-r border-b border-outline-variant/20 bg-surface-container-low/20"></div>';
+    }
+
+    for (var tanggal = 1; tanggal <= jumlahHari; tanggal++) {
+      var iso = tanggalISO(tahun, bulan, tanggal);
+      var weton = getWeton(iso);
+      var hasil = getHasil(weton.total);
+      var cocokFilter = filterAktif.indexOf(hasil.nama) !== -1;
+      var redup = filterAktif.length > 0 && !cocokFilter ? "opacity-35" : "";
+
+      calendarBody.innerHTML += `
+        <div class="min-h-[140px] p-3 border-r border-b border-outline-variant/20 hover:bg-surface-container transition-colors cursor-pointer group relative ${redup}"
+          data-tanggal="${tanggal}" data-bulan="${bulan}" data-tahun="${tahun}">
+          <span class="font-headline-md text-headline-md text-on-surface-variant group-hover:text-primary">${tanggal}</span>
+          <div class="mt-1 flex flex-col">
+            <span class="font-label-md text-[10px] text-secondary uppercase tracking-tighter">${weton.pasaran}</span>
+            <div class="mt-2 inline-flex items-center gap-1.5 px-2 py-0.5 ${warnaHasil(hasil.nama)} rounded text-[11px] font-bold w-fit uppercase">
+              ${iconHasil(hasil.nama)}${hasil.nama}
+            </div>
+            <span class="mt-2 text-[10px] text-on-surface-variant">Neptu ${weton.total}</span>
+          </div>
+          <div class="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-primary/30">arrow_outward</span>
+          </div>
+        </div>
+      `;
+    }
+
+    document.querySelectorAll("#calendarBody [data-tanggal]").forEach(function (cell) {
+      cell.addEventListener("click", function () {
+        document.querySelectorAll("#calendarBody [data-tanggal]").forEach(function (el) {
+          el.classList.remove("bg-secondary-container/10", "ring-1", "ring-inset", "ring-secondary/20");
+        });
+        this.classList.add("bg-secondary-container/10", "ring-1", "ring-inset", "ring-secondary/20");
+        var tanggal = parseInt(this.dataset.tanggal);
+        var bulan = parseInt(this.dataset.bulan);
+        var tahun = parseInt(this.dataset.tahun);
+        var iso = tanggalISO(tahun, bulan, tanggal);
+        var weton = getWeton(iso);
+        var hasil = getHasil(weton.total);
+        renderDetail({ tanggal: tanggal, bulan: bulan, tahun: tahun, weton: weton, hasil: hasil });
+      });
     });
+  }
+
+  document.getElementById("btnTampilkan").addEventListener("click", renderKalender);
+  document.getElementById("bulanInput").addEventListener("change", renderKalender);
+  document.getElementById("tahunInput").addEventListener("input", renderKalender);
+  document.getElementById("filterSri").addEventListener("change", renderKalender);
+  document.getElementById("filterGedhong").addEventListener("change", renderKalender);
+  document.getElementById("filterLungguh").addEventListener("change", renderKalender);
+
+  var now = new Date();
+  document.getElementById("bulanInput").value = now.getMonth();
+  document.getElementById("tahunInput").value = now.getFullYear();
+  renderKalender();
+})();
+</script>
+<script>
+(function () {
+  var hariNeptu = { Minggu: 5, Senin: 4, Selasa: 3, Rabu: 7, Kamis: 8, Jumat: 6, Sabtu: 9 };
+  var pasaranNeptu = { Legi: 5, Pahing: 9, Pon: 7, Wage: 4, Kliwon: 8 };
+  var hariList = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+  var pasaranList = ["Legi", "Pahing", "Pon", "Wage", "Kliwon"];
+  var pitutur = [
+    ["Ajining diri dumunung ana ing lathi, ajining raga dumunung ana ing busana.", "Harga diri tampak dari ucapan, dan kehormatan tampak dari perilaku."],
+    ["Urip iku urup.", "Hidup sebaiknya memberi manfaat bagi sekitar."],
+    ["Sura dira jayaningrat, lebur dening pangastuti.", "Kekuatan dan amarah dapat luluh oleh kelembutan hati."],
+    ["Sepi ing pamrih, rame ing gawe.", "Bekerja dengan tulus tanpa terlalu mengharap pujian."]
+  ];
+
+  function getWeton(dateValue) {
+    var date = new Date(dateValue + "T00:00:00");
+    var hari = hariList[date.getDay()];
+    var anchor = new Date("2008-04-23T00:00:00");
+    var diff = Math.floor((date - anchor) / (1000 * 60 * 60 * 24));
+    var pasaran = pasaranList[((diff % 5) + 5) % 5];
+    return { hari: hari, pasaran: pasaran, weton: hari + " " + pasaran, neptuHari: hariNeptu[hari], neptuPasaran: pasaranNeptu[pasaran], total: hariNeptu[hari] + pasaranNeptu[pasaran] };
+  }
+
+  function formatTanggal(v) {
+    return new Date(v + "T00:00:00").toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" });
+  }
+
+  function score(total, off) {
+    return Math.min(96, Math.max(62, 62 + ((total * 7 + off) % 35)));
+  }
+
+  function tafsir(weton) {
+    var data = {
+      "Rabu Legi": ["Dikenal ramah, mudah bergaul, cepat belajar, dan memiliki kemampuan menyesuaikan diri yang baik.", ["Ramah","Cepat belajar","Mudah dipercaya","Suka membantu"], ["Kadang terlalu mengalah","Mudah memikirkan banyak hal"]],
+      "Jumat Pahing": ["Punya semangat besar, jiwa pemimpin, dan kemampuan mempengaruhi sekitar dengan kuat.", ["Pemimpin","Semangat","Tegas","Berani"], ["Mudah tersulut","Perlu menahan emosi"]],
+      "Sabtu Pahing": ["Kuat, tegas, dan memiliki dorongan besar untuk menguasai bidang yang diminati.", ["Kuat","Tekun","Tegas","Ambisius"], ["Kadang keras","Perlu lebih sabar"]],
+      "Jumat Legi": ["Lembut, berjiwa sosial, dan sering membawa keteduhan dalam hubungan dengan orang lain.", ["Lembut","Peduli","Sopan","Damai"], ["Terlalu perasa","Mudah sungkan"]]
+    };
+    return data[weton] || ["Weton ini menggambarkan pribadi yang unik, memiliki potensi besar, dan dapat berkembang baik ketika mampu menjaga keseimbangan rasa, pikiran, dan tindakan.", ["Adaptif","Berpotensi besar","Mudah belajar","Punya ciri khas"], ["Perlu mengenal diri lebih dalam","Perlu menjaga konsistensi"]];
+  }
+
+  function life(label, icon, value) {
+    return '<div><div class="flex justify-between mb-2"><span class="font-bold text-[#362115]">' + icon + " " + label + '</span><span class="text-[#735c00] font-bold">' + value + '%</span></div><div class="life-bar"><div class="life-fill" data-width="' + value + '"></div></div></div>';
+  }
+
+  function list(items) {
+    return items.map(function (x) { return '<li class="flex gap-3"><span class="text-[#735c00]">\u2726</span><span>' + x + "</span></li>"; }).join("");
+  }
+
+  document.getElementById("wsFormWeton").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var nama = document.getElementById("wsNama").value.trim() || "Panjenengan";
+    var tanggal = document.getElementById("wsTanggal").value;
+    if (!tanggal) { alert("Masukkan tanggal lahir dulu."); return; }
+
+    var w = getWeton(tanggal);
+    var t = tafsir(w.weton);
+    var pit = pitutur[w.total % pitutur.length];
+
+    document.getElementById("wsHasilKosong").classList.add("hidden");
+    var box = document.getElementById("wsHasil");
+    box.classList.remove("hidden");
+
+    box.innerHTML = `
+    <div class="bg-white rounded-2xl border border-[#d3c3bc]/60 p-6 md:p-8 shadow-sm">
+      <p class="text-[11px] uppercase tracking-[0.35em] text-[#735c00] font-bold mb-3">Hasil Weton Pribadi</p>
+      <h3 class="font-jawi text-4xl md:text-5xl text-[#362115] mb-2">${nama}</h3>
+      <p class="text-[#4f453f] mb-8">${formatTanggal(tanggal)}</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-[#fff1eb] p-5 rounded-xl"><p class="text-[10px] uppercase tracking-widest text-[#4f453f] font-bold">Hari</p><p class="font-jawi text-2xl">${w.hari}</p></div>
+        <div class="bg-[#fff1eb] p-5 rounded-xl"><p class="text-[10px] uppercase tracking-widest text-[#4f453f] font-bold">Pasaran</p><p class="font-jawi text-2xl">${w.pasaran}</p></div>
+        <div class="bg-[#fff1eb] p-5 rounded-xl"><p class="text-[10px] uppercase tracking-widest text-[#4f453f] font-bold">Weton</p><p class="font-jawi text-2xl">${w.weton}</p></div>
+        <div class="bg-[#362115] text-white p-5 rounded-xl"><p class="text-[10px] uppercase tracking-widest opacity-80 font-bold">Neptu</p><p class="font-jawi text-3xl">${w.total}</p></div>
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl border border-[#d3c3bc]/60 p-6 md:p-8 shadow-sm"><p class="text-[11px] uppercase tracking-[0.35em] text-[#735c00] font-bold mb-3">Arti Weton</p><h3 class="font-jawi text-4xl mb-4">${w.weton}</h3><p class="text-[#4f453f] leading-relaxed text-lg">${t[0]}</p></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="bg-white rounded-2xl border border-[#d3c3bc]/60 p-6 md:p-8 shadow-sm"><h3 class="font-jawi text-3xl mb-5">Kelebihan</h3><ul class="space-y-3 text-[#4f453f]">${list(t[1])}</ul></div><div class="bg-white rounded-2xl border border-[#d3c3bc]/60 p-6 md:p-8 shadow-sm"><h3 class="font-jawi text-3xl mb-5">Tantangan</h3><ul class="space-y-3 text-[#4f453f]">${list(t[2])}</ul></div></div>
+    <div class="bg-white rounded-2xl border border-[#d3c3bc]/60 p-6 md:p-8 shadow-sm"><p class="text-[11px] uppercase tracking-[0.35em] text-[#735c00] font-bold mb-3">Pohon Kehidupan Weton</p><h3 class="font-jawi text-4xl mb-8">Gambaran Daya Hidup</h3><div class="space-y-6">${life("Percintaan","\u2764\uFE0F",score(w.total,4))}${life("Rezeki","\uD83D\uDCB0",score(w.total,10))}${life("Sosial","\uD83D\uDC65",score(w.total,16))}${life("Belajar","\uD83D\uDCDA",score(w.total,22))}${life("Karier","\uD83D\uDCBC",score(w.total,28))}${life("Batin","\uD83E\uDDD8",score(w.total,34))}</div></div>
+    <div class="bg-[#362115] text-white rounded-2xl p-6 md:p-8 shadow-sm"><p class="text-[11px] uppercase tracking-[0.35em] opacity-80 font-bold mb-3">Pitutur Jawa</p><p class="font-jawi text-3xl md:text-4xl italic mb-4">"${pit[0]}"</p><p class="text-white/80">${pit[1]}</p></div>`;
+
+    requestAnimationFrame(function () {
+      document.querySelectorAll(".life-fill").forEach(function (b) { b.style.width = b.dataset.width + "%"; });
+    });
+    box.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 })();
 </script>
+<script>
+(function () {
+  var btn = document.getElementById('wjxToggle');
+  var menu = document.getElementById('wjxMobile');
+  if (btn && menu) {
+    btn.addEventListener('click', function () {
+      var open = menu.classList.toggle('is-open');
+      btn.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+    });
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        menu.classList.remove('is-open');
+        btn.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('aria-hidden', 'true');
+      });
+    });
+  }
 
-</body></html>
+  var links = Array.prototype.slice.call(document.querySelectorAll('.wjx-link[href^="#"]'));
+  var sections = links.map(function (l) { return document.querySelector(l.getAttribute('href')); }).filter(Boolean);
+
+  if (sections.length && 'IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (l) {
+          l.classList.toggle('is-active', l.getAttribute('href') === '#' + entry.target.id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+})();
+</script>
+
+</body>
+</html>
