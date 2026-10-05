@@ -17,16 +17,11 @@
 <meta property="og:url" content="https://weton-jawa-self.vercel.app"/>
 <meta property="og:site_name" content="Weton Jawi"/>
 <meta property="og:locale" content="id_ID"/>
-<link rel="icon" type="image/png" href="https://qriz-art.github.io/gudang/assets/sameki.png"/>
 <link rel="canonical" href="https://weton-jawa-self.vercel.app"/>
 <!-- =========================================================
      MONETAG
-     1) VERIFIKASI: pilih metode "Masukkan kode" di dashboard Monetag,
-        lalu tempel token pada baris meta monetag di bawah dan hapus tanda komentar.
-     2) IKLAN: buat zona iklan (Banner / In-Page Push / OnClick Popunder),
-        lalu tempel script zona pada setiap penanda "SLOT IKLAN" di dalam body.
-     3) Untuk Popunder / In-Page Push / Vignette, cukup tempel script utama
-        Monetag sekali di bawah ini.
+     - Verifikasi: file sw.js di root (+ meta di bawah).
+     - Iklan: satu tag MultiTag, dipasang sebelum </body>.
 ========================================================= -->
 <!-- MONETAG VERIFIKASI SITUS -->
 <meta name="monetag" content="926b72800274abb703f98d7599d9e1f734">
@@ -164,6 +159,8 @@
   .calendar-scroll::-webkit-scrollbar-thumb { background: rgba(115,92,0,.35); border-radius: 999px; }
   .calendar-scroll::-webkit-scrollbar-track { background: rgba(211,195,188,.25); }
   .calendar-hint{ display:none; margin:0; padding:10px 14px; border-top:1px solid rgba(211,195,188,.4); background:#fff; color:#735c00; font-family:'Plus Jakarta Sans',sans-serif; font-size:11px; font-weight:700; text-align:center; }
+  .adsterra-banner{ display:flex; justify-content:center; align-items:center; width:100%; max-width:1140px; margin:32px auto; padding:0 20px; overflow:hidden; }
+  @media (max-width: 480px){ .adsterra-banner{ transform: scale(.72); transform-origin:center top; margin:20px auto; } }
   .ornament-border { border-image: linear-gradient(to right, transparent, #D4AF37, transparent) 1; }
   .wjx-nav{
     position: sticky; top: 0; z-index: 9999;
@@ -242,16 +239,6 @@
     .wjx-subtitle{ letter-spacing: .16em; }
     .wjx-toggle{ width: 42px; height: 42px; }
   }
-  .ad-slot{ width: 100%; max-width: 1140px; margin: 32px auto; padding: 0 20px; }
-  .ad-slot-wide{ max-width: 1280px; }
-  .ad-slot-box{
-    min-height: 100px; display: flex; align-items: center; justify-content: center;
-    padding: 16px; border: 1px dashed rgba(211,195,188,.8); border-radius: 16px;
-    background: rgba(255,255,255,.5); color: #95867e;
-    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px; font-weight: 700;
-    letter-spacing: .28em; text-transform: uppercase; text-align: center;
-  }
-  .ad-slot-box > *{ margin: 0 auto; }
 
   @media (max-width: 1024px){
     aside.sticky{ position: static !important; top: auto !important; }
@@ -271,8 +258,6 @@
     #calendarBody > div{ min-height: 105px !important; padding: 10px !important; }
     #calendarBody span{ font-size: 11px !important; }
     #detailTanggal{ padding: 24px !important; }
-    .ad-slot{ margin: 24px auto; }
-    .ad-slot-box{ min-height: 80px; }
   }
 
   @media print {
@@ -297,7 +282,7 @@
     #cert-container .prada-gold-border {
       min-height: calc(297mm - 16mm) !important; box-sizing: border-box !important;
     }
-    .no-print, nav, footer, .ad-slot { display: none !important; visibility: hidden !important; }
+    .no-print, nav, footer { display: none !important; visibility: hidden !important; }
   }
 </style>
 </head>
@@ -330,10 +315,6 @@
   </div>
 </nav>
 
-<!-- SLOT IKLAN 1 — BAWAH NAVBAR (banner atas): tempel script zona Monetag di dalam div ini -->
-<div class="ad-slot ad-slot-wide no-print" aria-label="Iklan">
-  <div class="ad-slot-box">Slot Iklan</div>
-</div>
 <section id="beranda" class="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-40">
   <div class="absolute inset-0 z-0 batik-overlay flex justify-center items-center pointer-events-none">
     <img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARuXzIwrezLv0H0uGJYSkACgoNTohrkolg9ZRmxEUGFJnQXxPXgtjYgDE2phJCJICMp3XRBRF_vEr4hj6aXHUz0tcU56LRToBpxMLLSjU_ipqlULyWkNpZ2tS9FGBZHH3Fxx8fRhsS9TRVY9rOFNrpOoOduyWnvzffO-2hX88xRcdx1uu4MuI5JGLWiksyqZlMqiL4ThwG8I1wWLJOv-8cugURWkNztWBIzayzQe6Lq9l_Exp1rjxHhaah7fkg-VWsT9WKzkiqNXE"/>
@@ -378,9 +359,19 @@
   </div>
 </section>
 
-<!-- SLOT IKLAN 2 — SETELAH HERO -->
-<div class="ad-slot no-print" aria-label="Iklan">
-  <div class="ad-slot-box">Slot Iklan</div>
+
+<!-- ADSTERRA — Banner 468x60 -->
+<div class="adsterra-banner no-print" aria-label="Iklan">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'e2e8f99132add153ab7e909a26c535e5',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/e2e8f99132add153ab7e909a26c535e5/invoke.js"></script>
 </div>
 
 <section class="py-24 bg-surface-container-lowest">
@@ -411,6 +402,20 @@
     </div>
   </div>
 </section>
+<!-- ADSTERRA — Banner 468x60 -->
+<div class="adsterra-banner no-print" aria-label="Iklan">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'e2e8f99132add153ab7e909a26c535e5',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/e2e8f99132add153ab7e909a26c535e5/invoke.js"></script>
+</div>
+
 <section class="py-24 md:py-40 relative" id="kalkulator">
   <div class="max-w-5xl mx-auto px-container-padding-mobile">
     <div class="bg-white p-8 md:p-16 border border-outline-variant/30 shadow-sm relative overflow-hidden">
@@ -495,10 +500,6 @@
       </div>
     </div>
 
-    <!-- SLOT IKLAN 3 — SETELAH KALKULATOR / HASIL -->
-    <div class="ad-slot no-print" aria-label="Iklan">
-      <div class="ad-slot-box">Slot Iklan</div>
-    </div>
 
     <div class="mt-24 flex items-center justify-center">
       <div class="h-[1px] bg-outline-variant/50 w-full"></div>
@@ -509,6 +510,20 @@
     </div>
   </div>
 </section>
+<!-- ADSTERRA — Banner 468x60 -->
+<div class="adsterra-banner no-print" aria-label="Iklan">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'e2e8f99132add153ab7e909a26c535e5',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/e2e8f99132add153ab7e909a26c535e5/invoke.js"></script>
+</div>
+
 <section class="py-24 bg-surface">
   <div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
     <h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Inspirasi Kebahagiaan</h2>
@@ -536,12 +551,22 @@
       </div>
     </div>
 
-    <!-- SLOT IKLAN 4 — AREA KOSONG SETELAH GRID INSPIRASI -->
-    <div class="ad-slot no-print" aria-label="Iklan">
-      <div class="ad-slot-box">Slot Iklan</div>
-    </div>
   </div>
 </section>
+
+<!-- ADSTERRA — Banner 468x60 -->
+<div class="adsterra-banner no-print" aria-label="Iklan">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'e2e8f99132add153ab7e909a26c535e5',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/e2e8f99132add153ab7e909a26c535e5/invoke.js"></script>
+</div>
 
 <section id="tanggal-baik" class="batik-pattern border-t border-outline-variant/40 py-24">
   <div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
@@ -640,10 +665,20 @@
   </div>
 </section>
 
-<!-- SLOT IKLAN 5 — SETELAH KALENDER -->
-<div class="ad-slot no-print" aria-label="Iklan">
-  <div class="ad-slot-box">Slot Iklan</div>
+<!-- ADSTERRA — Banner 468x60 -->
+<div class="adsterra-banner no-print" aria-label="Iklan">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'e2e8f99132add153ab7e909a26c535e5',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/e2e8f99132add153ab7e909a26c535e5/invoke.js"></script>
 </div>
+
 <!-- ================= Weton Saya ================= -->
 <section id="weton-saya" class="py-24 bg-surface">
   <div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
@@ -679,12 +714,22 @@
   </div>
 </section>
 
-<!-- SLOT IKLAN 6 — SETELAH WETON SAYA -->
-<div class="ad-slot no-print" aria-label="Iklan">
-  <div class="ad-slot-box">Slot Iklan</div>
-</div>
 
 <!-- ================= Tentang Budaya ================= -->
+<!-- ADSTERRA — Banner 468x60 -->
+<div class="adsterra-banner no-print" aria-label="Iklan">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'e2e8f99132add153ab7e909a26c535e5',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/e2e8f99132add153ab7e909a26c535e5/invoke.js"></script>
+</div>
+
 <section id="tentang-budaya" class="relative border-t border-outline-variant/40">
   <div class="fixed inset-0 batik-overlay-article pointer-events-none"></div>
   <div class="relative min-h-[520px] md:h-[600px] flex items-center justify-center overflow-hidden px-container-padding-mobile">
@@ -771,10 +816,6 @@
       </div>
     </div>
 
-    <!-- SLOT IKLAN 7 — AREA TENGAH ARTIKEL -->
-    <div class="ad-slot no-print" aria-label="Iklan">
-      <div class="ad-slot-box">Slot Iklan</div>
-    </div>
     <div class="py-24" id="kecocokan">
       <div class="text-center mb-16">
         <h2 class="font-headline-lg text-headline-lg text-primary mb-4">8 Kategori Kecocokan Primbon</h2>
@@ -887,9 +928,19 @@
   </div>
 </section>
 
-<!-- SLOT IKLAN 8 — SEBELUM CTA PENUTUP -->
-<div class="ad-slot no-print" aria-label="Iklan">
-  <div class="ad-slot-box">Slot Iklan</div>
+
+<!-- ADSTERRA — Banner 468x60 -->
+<div class="adsterra-banner no-print" aria-label="Iklan">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'e2e8f99132add153ab7e909a26c535e5',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/e2e8f99132add153ab7e909a26c535e5/invoke.js"></script>
 </div>
 
 <section class="bg-surface-container py-24 text-center">
@@ -902,9 +953,19 @@
   </div>
 </section>
 
-<!-- SLOT IKLAN 9 — BANNER ATAS FOOTER (banner bawah) -->
-<div class="ad-slot ad-slot-wide no-print" aria-label="Iklan">
-  <div class="ad-slot-box">Slot Iklan</div>
+
+<!-- ADSTERRA — Banner 468x60 -->
+<div class="adsterra-banner no-print" aria-label="Iklan">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'e2e8f99132add153ab7e909a26c535e5',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/e2e8f99132add153ab7e909a26c535e5/invoke.js"></script>
 </div>
 
 <footer class="bg-surface-container-low border-t border-outline-variant/50">
@@ -929,10 +990,6 @@
     </div>
   </div>
 
-  <!-- SLOT IKLAN 10 — FOOTER BAWAH (banner bawah) -->
-  <div class="ad-slot ad-slot-wide no-print pb-8" aria-label="Iklan">
-    <div class="ad-slot-box">Slot Iklan</div>
-  </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -1552,5 +1609,8 @@
 
 <!-- MONETAG — MultiTag (satu tag untuk semua format), zone 290848 -->
 <script src="https://quge5.com/88/tag.min.js" data-zone="290848" async data-cfasync="false"></script>
+
+<!-- ADSTERRA — Social Bar (satu script global) -->
+<script type="text/javascript" src="https://pl31674485.profitableratecpmnetwork.com/d2/63/08/d2630877291333b1e9a93e412e3c4c61.js"></script>
 </body>
 </html>
